@@ -1,45 +1,112 @@
 package com.report.jasper.entities;
 
-import java.io.Serializable;
+import java.util.Date;
 
-/*import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.NamedQuery;
-import javax.persistence.Table; */
-// 
+public class Report {  
+	
+	private Long id;
+	private String courseName;
+	private Long duration;
+	private Long activationId;
+	private Date startDate;
+	private Date endDate;
+	private String category;
+	private String hall;
+	private String locationName;
+	private String instructor;
+	
+	
+//	TAC_COURSE_STATUS_VIEW
+//	private String employee;
+//	private Long jobNo;
+//	private Long courseName;
+//	private Date startDate;
+//	private Date endDate;
+//	private String duration;
+//	private String job;
+//	private String jobTitle;
+//	private String department;
+//	private Long jobCardNo;
+//	private String requestStatus;
+//	private String courseStatus;
+	
+	
+	
+//	TAC_INSTRUCTOR_SUBJECT_VIEW
+//	private String name; 
+//	private String type; 
+//	private String courseName; 
+//	private String organisation; 
+//	private String jobTitle; 
+//	private String companyName; 
+//	private String qid; 
+//	private String course; 
+//	private String priority; 
+	public Long getId() {
+		return id;
+	}
+	public void setId(Long id) {
+		this.id = id;
+	}
+	public String getCourseName() {
+		return courseName;
+	}
+	public void setCourseName(String courseName) {
+		this.courseName = courseName;
+	}
+	public Long getDuration() {
+		return duration;
+	}
+	public void setDuration(Long duration) {
+		this.duration = duration;
+	}
+	public Long getActivationId() {
+		return activationId;
+	}
+	public void setActivationId(Long activationId) {
+		this.activationId = activationId;
+	}
+	public Date getStartDate() {
+		return startDate;
+	}
+	public void setStartDate(Date startDate) {
+		this.startDate = startDate;
+	}
+	public Date getEndDate() {
+		return endDate;
+	}
+	public void setEndDate(Date endDate) {
+		this.endDate = endDate;
+	}
+	public String getCategory() {
+		return category;
+	}
+	public void setCategory(String category) {
+		this.category = category;
+	}
+	public String getHall() {
+		return hall;
+	}
+	public void setHall(String hall) {
+		this.hall = hall;
+	}
+	public String getLocationName() {
+		return locationName;
+	}
+	public void setLocationName(String locationName) {
+		this.locationName = locationName;
+	}
+	public String getInstructor() {
+		return instructor;
+	}
+	public void setInstructor(String instructor) {
+		this.instructor = instructor;
+	}
+	  
+	
+	
 
-
-//@Entity
-//@NamedQuery(name="Country.findAll", query="SELECT c FROM Country c")
-//@Table(name="COUNTRY")
-//@Table(name="TAC_COURSE_MASTER_VIEW")
-public class Report implements Serializable{ 
-	private static final long serialVersionUID = 1L;
-
-	/*
-	 * @Id
-	 * 
-	 * @GeneratedValue(strategy=GenerationType.IDENTITY) private long id;
-	 * 
-	 * @Column(name="COURSE_NAME") private String cnameAr;
-	 * 
-	 * @Column(name="COURSE_STATUS") private String cnameEn;
-	 * 
-	 * 
-	 * 
-	 * public long getId() { return this.id; }
-	 * 
-	 * public void setId(long id) { this.id = id; }
-	 * 
-	 * public String getCnameAr() { return this.cnameAr; }
-	 * 
-	 * public void setCnameAr(String cnameAr) { this.cnameAr = cnameAr; }
-	 * 
-	 * public String getCnameEn() { return this.cnameEn; }
-	 * 
-	 * public void setCnameEn(String cnameEn) { this.cnameEn = cnameEn; }
-	 */
+	 
+	 
+	
 }
