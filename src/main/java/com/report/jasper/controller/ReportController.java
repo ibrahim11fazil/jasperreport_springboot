@@ -60,13 +60,13 @@ public class ReportController {
     	this.fileService = fileService;
 	}
     
-	@GetMapping(value = "/api/files/system/{filename}", produces = "application/pdf; charset=utf-8")
+	@GetMapping(value = "/pdfReportDownload/{filename}", produces = "application/pdf; charset=utf-8")
  	public Resource getPDFFileFromFileSystem(@PathVariable String filename, HttpServletResponse response) {
 			System.out.println("filename*********" +filename);
 		return fileService.getFileSystem(filename, response);
 	}
 	
-	@GetMapping(value = "/api/files/system/{filename}", produces = "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet; charset=utf-8")
+	@GetMapping(value = "/excelReportDownload/{filename}", produces = "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet; charset=utf-8")
  	public Resource getExcelFileFromFileSystem(@PathVariable String filename, HttpServletResponse response) {
 			System.out.println("filename*********" +filename);
 		return fileService.getFileSystem(filename, response);

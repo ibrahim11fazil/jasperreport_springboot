@@ -20,15 +20,15 @@ extends JpaRepository<InstructorSubjectReport,Integer>
 	  
 	  
 	  @Query( value = "select * from TAC_INSTRUCTOR_SUBJECT_VIEW  \n" + 
-		  		"where (NAME like UPPER('%'||:name||'%')  or :name  is null)\n" + 
-		  		"AND (TYPE like UPPER('%'||:type||'%') or :type  is null)\n" +
-		  		"AND (JOB_ID  like UPPER('%'||:jobId||'%')  or :jobId is   null)\n" +  
-				"AND ( ORGANIZATION  like UPPER('%'||:organisation||'%')   or :organisation is   null)\n" +  
-				"AND ( JOB_TITLE like UPPER('%'||:jobTitle||'%')  or :jobTitle is   null)\n" + 
-				"AND ( COMPANY_NAME like UPPER('%'||:companyName||'%')  or :companyName is   null)\n" +  
-				"AND ( QID  like UPPER('%'||:qid||'%')  or :qid is   null)\n" +  
-				"AND ( COURSE   like UPPER('%'||:course||'%')  or :course is  null)\n" + 
-				"AND ( PRIORITY	   like UPPER('%'||:priority||'%')  or  :priority is  null) ",nativeQuery = true)
+		  		"where (UPPER(NAME) like UPPER('%'||:name||'%')  or :name  is null)\n" + 
+		  		"AND (UPPER(TYPE) like UPPER('%'||:type||'%') or :type  is null)\n" +
+		  		"AND (UPPER(JOB_ID)  like UPPER('%'||:jobId||'%')  or :jobId is   null)\n" +  
+				"AND ( UPPER(ORGANIZATION)  like UPPER('%'||:organisation||'%')   or :organisation is   null)\n" +  
+				"AND ( UPPER(JOB_TITLE) like UPPER('%'||:jobTitle||'%')  or :jobTitle is   null)\n" + 
+				"AND ( UPPER(COMPANY_NAME) like UPPER('%'||:companyName||'%')  or :companyName is   null)\n" +  
+				"AND ( UPPER(QID)  like UPPER('%'||:qid||'%')  or :qid is   null)\n" +  
+				"AND ( UPPER(COURSE)   like UPPER('%'||:course||'%')  or :course is  null)\n" + 
+				"AND ( UPPER(PRIORITY)	   like UPPER('%'||:priority||'%')  or  :priority is  null) ",nativeQuery = true)
 		    List<InstructorSubjectReport> generateInstructorReport(String name, String type
 		    		,String jobId,
 		    		String organisation, 

@@ -17,7 +17,7 @@ public class FileService {
 	   @Value("${file.upload-dir}")
 	    private String folderLocation;
 	   
-//	private static final String FILE_DIRECTORY = "C:\\Users\\ibrahim.fazil\\Desktop\\Reportss\\";
+	private static final String FILE_DIRECTORY = "C:\\Users\\ibrahim.fazil\\Desktop\\Reportss\\";
 //	   private static final String FILE_DIRECTORY = folderLocation+"/" ;
 	   String path = folderLocation + "/" ;
 	/**
@@ -54,6 +54,7 @@ public class FileService {
 		Resource resource = null;
 		switch (resourceType) {
 			case FILE_SYSTEM:
+//				resource = new FileSystemResource(FILE_DIRECTORY+filename);
 				resource = new FileSystemResource(path+filename);
 				System.out.println("resource is "+resource);
 				break;
