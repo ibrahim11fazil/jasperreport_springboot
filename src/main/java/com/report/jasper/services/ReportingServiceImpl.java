@@ -138,7 +138,7 @@ public class ReportingServiceImpl implements ReportingService {
 	public String exportReport(String reportFormat,CourseReport courseDetailsData) throws FileNotFoundException, JRException {
 //		String path = "C:\\Users\\ibrahim.fazil\\Desktop\\Reportss";
 		
-		String path = folderLocation + "/" ;
+		String path = folderLocation;
 		List<CourseReport> reports= null;
 		String result=null;
 		try { 
@@ -229,7 +229,7 @@ public class ReportingServiceImpl implements ReportingService {
 	
 	public String exportCourseStatusReport(String reportFormat,CourseStatusReport courseStatusData) throws FileNotFoundException, JRException {
 //		String path = "C:\\Users\\ibrahim.fazil\\Desktop\\Reportss";
-		String path = folderLocation + "/" ;
+		String path = folderLocation;
 		List<CourseStatusReport> reports= null;
 		String result="";
 		try { 
@@ -298,7 +298,7 @@ public class ReportingServiceImpl implements ReportingService {
 	
 	public String  exportIntructorSubjectReport(String reportFormat,InstructorSubjectReport instSubjReport) throws FileNotFoundException, JRException {
 //		String path = "C:\\Users\\ibrahim.fazil\\Desktop\\Reportss";
-		String path = folderLocation + "/" ;
+		String path = folderLocation;
 		String result="";
 		List<InstructorSubjectReport> reports= null;
 		try { 
