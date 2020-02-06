@@ -164,16 +164,16 @@ public class ReportingServiceImpl implements ReportingService {
 				for(CourseReport report:reports) {
 					System.out.println("repor cpourse name "+ report.getCourseName());
 				}
-				
+				System.out.println("report size 2***"+ reports.size());
 //		if((reportFormat!=null && !reportFormat.trim().contains(""))
 //				&& (reports!=null && reports.size()>0)) {
-				if((reportFormat!=null )
-						&& (reports!=null )) {
+				if((reportFormat!=null && !reportFormat.trim().equals("") )
+						&& (reports!=null && reports.size()>0 )) {
 //		load file and compile it
 //	    File file = ResourceUtils.getFile("classpath:reports/CourseReport_A4.jrxml");CourseReport_A4
 //	    final InputStream reportInputStream = getClass().getResourceAsStream("/reports/CountryReport.jrxml");
 		reports.add(0,  new  CourseReport());
-		System.out.println("report size 2***"+ reports);
+		System.out.println("report size 2***"+ reports.size());
 		final InputStream reportInputStream = getClass().getResourceAsStream("/reports/CourseDetails_A4.jrxml");
 		final JasperDesign jasperDesign = JRXmlLoader.load(reportInputStream);
 
@@ -220,7 +220,7 @@ public class ReportingServiceImpl implements ReportingService {
 		result="Exception Occured While generating Report : Exception";
 		return result;
 	}
-		return result="report generated Successfully";
+		return result="Report generated Successfully";
 //		return reports;
 	}
 	
@@ -245,10 +245,8 @@ public class ReportingServiceImpl implements ReportingService {
 				courseStatusData.getCourseStatus());
 				
 				
-//		if((reportFormat!=null && !reportFormat.trim().contains(""))
-//						&& (reports!=null && reports.size()>0)) {
-				if((reportFormat!=null)
-						&& (reports!=null )) {
+		if((reportFormat!=null && !reportFormat.trim().equals(""))
+						&& (reports!=null && reports.size()>0)) { 
 		reports.add(0, null);
 		final InputStream reportInputStream = getClass().getResourceAsStream("/reports/CourseStatus_A4.jrxml");
 		final JasperDesign jasperDesign = JRXmlLoader.load(reportInputStream);
@@ -291,7 +289,7 @@ public class ReportingServiceImpl implements ReportingService {
 		result="Exception Occured While generating Report : Exception";
 		return result; 
 	}
-		return result = "report generated Successfully";
+		return result = "Report generated Successfully";
 //		return reports;
 	}
 	
@@ -320,8 +318,8 @@ public class ReportingServiceImpl implements ReportingService {
 //				} 
 		System.out.println("report Format"+ reportFormat);
 		System.out.println("report size"+ reports);
-				if((reportFormat!=null)
-						&& (reports!=null)) {
+		if((reportFormat!=null && !reportFormat.trim().equals(""))
+				&& (reports!=null && reports.size()>0)) {
 					reports.add(0, null);
 		    final InputStream reportInputStream = getClass().getResourceAsStream("/reports/InstructorSubject_A4.jrxml");
 			final JasperDesign jasperDesign = JRXmlLoader.load(reportInputStream);
@@ -365,7 +363,7 @@ public class ReportingServiceImpl implements ReportingService {
 		result="Exception Occured While generating Report : Exception";
 //		return result;
 	}
-		return result= "report generated Successfully";
+		return result= "Report generated Successfully";
 //		return reports;
 	}
 
