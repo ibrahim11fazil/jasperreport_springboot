@@ -1,0 +1,131 @@
+security:
+  oauth2:
+    resource:
+      jwt:
+        key-value:
+          -----BEGIN PUBLIC KEY-----
+          MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAnXaDQtFEcmUVf2DlcCi1
+          V8uPfDT54Z5RG1afpqbAgvor0V3SopLuKEBm8DUGwLume31k9GtUWnm9BjlIWDvK
+          Zogn22YyKWWeHVfy+1SHL3owtR4iaS43pVQTEuIBcGC//vCRd8aWByqv0U6zVWoe
+          ejG9MiDjyQztUuqi1wJQeDr6Th0m+kAWw7Xk44kd7vp+ZnzAsDJC4S5eS1Dbm8qx
+          xHe8C7HxuJAKvafxMjXZmIhocaCSHk/VroDOJYC+a7vl+gNY+qnM1Wr5CYNNkUKw
+          mQcrvWJogMeo05eegZBUF//Yhsv4FLDZO0HIvwB3qSKUWwzv4RF922jOYp/3f6Oi
+          YwIDAQAB
+          -----END PUBLIC KEY-----
+    client:
+      clientId: report
+
+server:
+  port: 9071
+
+feign:
+  hystrix:
+    enabled: true
+
+spring:
+  application:
+    name: report
+  main:
+    allow-bean-definition-overriding: true
+  datasource:
+    url: ${EMPLOYEE_DB_URL:jdbc:oracle:thin:@//172.19.10.18:1521/CSTEST}
+    username: ${DB_USER_CRS:RPTUSER}
+    password: ${DB_PASSWORD_CRS:rpt4cstest$}
+    #    url: jdbc:oracle:thin:@//localhost:1521/xe
+    #    username: raj
+    #    password: 12345
+    driver-class-name: oracle.jdbc.OracleDriver
+    dbcp2:
+      test-while-idle: true
+      validation-query: SELECT 1
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: none
+      naming:
+        implicit-strategy: org.hibernate.boot.model.naming.ImplicitNamingStrategyLegacyHbmImpl
+        physical-strategy: org.springframework.boot.orm.jpa.hibernate.SpringPhysicalNamingStrategy
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.Oracle10gDialect
+        max_fetch_depth: 1
+
+  jackson:
+    serialization:
+      WRITE_DATES_AS_TIMESTAMPS: false
+      FAIL_ON_EMPTY_BEANS: false
+    time-zone: Asia/Qatar
+#  rabbitmq:
+#    host: ${RABBITMQ_HOST:172.16.0.254}
+#    port: 5672
+#    username: ${RABBITMQ_USER:admin}
+#    password: ${RABBITMQ_PASSWORD:admin}
+
+logging:
+  pattern:
+    console: '@%d{yyyy-MM-dd HH:mm:ss} %-5level %logger{36} - %msg%n'
+    file: '@%d{yyyy-MMM-dd HH:mm:ss.SSS} %-5level [%thread] %logger{15} - %msg%n'
+  level:
+    org:
+      springframework:
+        web: ERROR
+      hibernate: ERROR
+    qa:
+      gov:
+        customs:
+          employee: DEBUG
+  file: logs/report.log
+
+#eureka:
+#  client:
+#    healthcheck: true
+#    registryFetchIntervalSeconds: 5
+#    fetch-registry: true
+#    serviceUrl:
+#      defaultZone: ${vcap.services.eureka-service.credentials.uri:http://${REGISTRY_URL:registry}:8761}/eureka/
+#  instance:
+#    instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
+#    preferIpAddress: true
+
+#eureka:
+#  client:
+#    serviceUrl:
+#<<<<<<< HEAD
+#      defaultZone: ${vcap.services.eureka-service.credentials.uri:http://${registry:REGISTRY_URL}:8761}/eureka/
+#=======
+#      defaultZone: ${vcap.services.eureka-service.credentials.uri:http://${REGISTRY_URL:localhost}:8761}/eureka/
+#  instance:
+#    instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
+#    preferIpAddress: true
+#>>>>>>> 2f75bd6ce7f8f63a984d199355f5132dc2f45627
+
+eureka:
+  client:
+    healthcheck: true
+    registryFetchIntervalSeconds: 5
+    fetch-registry: true
+    serviceUrl:
+      defaultZone: http://registry:8761/eureka/
+  instance:
+    instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
+    preferIpAddress: true
+    ip-address: report
+
+management:
+  endpoint:
+    health:
+      show-details: always
+    info:
+      enabled: true
+    web:
+      exposure:
+        include: ["health","routes","metrics","info"]
+      enabled: true
+
+cloud:
+  inetutils:
+    prefered-networks:
+      - 10.0
+
+file:
+  upload-dir: ./uploads

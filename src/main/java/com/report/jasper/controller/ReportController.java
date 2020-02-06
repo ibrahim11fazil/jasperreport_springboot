@@ -42,7 +42,8 @@ import com.report.jasper.repository.ReportRepository;
 import net.sf.jasperreports.engine.JRException;
 
 @RestController
-@CrossOrigin(origins="http://localhost:4200") 
+//@CrossOrigin(origins="http://localhost:4200")
+@CrossOrigin(origins = "*")
 public class ReportController {
 
 	@Autowired
