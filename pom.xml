@@ -77,13 +77,13 @@
 	</dependencies>
 
 	<build>
-		<finalName>report</finalName>
+		<finalName>treport</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 				<configuration>
-					<finalName>report</finalName>
+					<finalName>treport</finalName>
 				</configuration>
 			</plugin>
 		</plugins>

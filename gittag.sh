@@ -21,8 +21,8 @@ if [ "$1" != "" ]
      if [ "$1" != "" ]
      then
       TAG=$(git describe --abbrev=0)
-      docker build .  -t 172.16.0.253:5000/report_server:$TAG
-      docker push 172.16.0.253:5000/report_server:$TAG
+      docker build .  -t 172.16.0.253:5000/treport:$TAG
+      docker push 172.16.0.253:5000/treport:$TAG
       echo "Done building"
       echo $TAG
      fi

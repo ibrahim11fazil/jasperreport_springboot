@@ -13,7 +13,7 @@ security:
           YwIDAQAB
           -----END PUBLIC KEY-----
     client:
-      clientId: report
+      clientId: treport
 
 server:
   port: 9071
@@ -24,7 +24,7 @@ feign:
 
 spring:
   application:
-    name: report
+    name: treport
   main:
     allow-bean-definition-overriding: true
   datasource:
@@ -74,7 +74,7 @@ logging:
       gov:
         customs:
           employee: DEBUG
-  file: logs/report.log
+  file: logs/treport.log
 
 #eureka:
 #  client:
@@ -109,7 +109,7 @@ eureka:
   instance:
     instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
     preferIpAddress: true
-    ip-address: report
+    ip-address: treport
 
 management:
   endpoint:
