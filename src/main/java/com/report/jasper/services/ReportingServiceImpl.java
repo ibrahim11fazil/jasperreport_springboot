@@ -195,7 +195,7 @@ public class ReportingServiceImpl implements ReportingService {
 			configuration.setOnePagePerSheet(true);
 			configuration.setIgnoreGraphics(false);
 //in mac	File outputFile = new File("/Users/ibrahim/Documents/Reports/Report.xlsx");
-			File outputFile = new File("C:/Users/ibrahim.fazil/Desktop/Reportss/CourseDetailsReport.xlsx");
+			File outputFile = new File( path + "/CourseDetailsReport.xlsx");
 			ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
 			OutputStream fileOutputStream = new FileOutputStream(outputFile);
 			Exporter exporter = new JRXlsxExporter();
@@ -264,7 +264,7 @@ public class ReportingServiceImpl implements ReportingService {
 			SimpleXlsxReportConfiguration configuration = new SimpleXlsxReportConfiguration();
 			configuration.setOnePagePerSheet(true);
 			configuration.setIgnoreGraphics(false); 
-			File outputFile = new File("C:/Users/ibrahim.fazil/Desktop/Reportss/CourseStatusReport.xlsx");
+			File outputFile = new File( path + "/CourseStatusReport.xlsx");
 			ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
 			OutputStream fileOutputStream = new FileOutputStream(outputFile);
 			Exporter exporter = new JRXlsxExporter();
@@ -337,7 +337,7 @@ public class ReportingServiceImpl implements ReportingService {
 				SimpleXlsxReportConfiguration configuration = new SimpleXlsxReportConfiguration();
 				configuration.setOnePagePerSheet(true);
 				configuration.setIgnoreGraphics(false); 
-				File outputFile = new File("C:/Users/ibrahim.fazil/Desktop/Reportss/InstructorSubjectReport.xlsx");
+				File outputFile = new File( path + "/InstructorSubjectReport.xlsx");
 				ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
 				OutputStream fileOutputStream = new FileOutputStream(outputFile);
 				Exporter exporter = new JRXlsxExporter();

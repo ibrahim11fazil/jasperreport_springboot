@@ -20,7 +20,7 @@
 			<rightPen lineWidth="0.5" lineColor="#000000"/>
 		</box>
 	</style>
-	<style name="Table_CH" mode="Opaque" backcolor="#BFE1FF" fontName="ArialFontCustom">
+	<style name="Table_CH" mode="Opaque" backcolor="#BFE1FF" fontName="Arial"  pdfFontName="Arial"   pdfEncoding="Identity-H" isPdfEmbedded="true">
 		<box>
 			<pen lineWidth="0.5" lineColor="#000000"/>
 			<topPen lineWidth="0.5" lineColor="#000000"/>
@@ -90,7 +90,7 @@
 							<textField isBlankWhenNull="true">
 								<reportElement x="0" y="0" width="100" height="30" isPrintInFirstWholeBand="true" uuid="a82159c8-c26e-4570-847b-2a7d67e29970"/>
 								<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
-									<font fontName="ArialFontCustom"/>
+									<font fontName="Arial"  pdfFontName="Arial"   pdfEncoding="Identity-H" isPdfEmbedded="true"/>
 								</textElement>
 								<textFieldExpression><![CDATA[$F{employee}]]></textFieldExpression>
 							</textField>
@@ -111,7 +111,7 @@
 							<textField isBlankWhenNull="true">
 								<reportElement x="0" y="0" width="100" height="30" uuid="89eb2f92-b18d-44bf-aa2b-77c6d7ab9269"/>
 								<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
-									<font fontName="ArialFontCustom"/>
+									<font fontName="Arial"  pdfFontName="Arial"   pdfEncoding="Identity-H" isPdfEmbedded="true"/>
 								</textElement>
 								<textFieldExpression><![CDATA[$F{jobNo}]]></textFieldExpression>
 							</textField>
@@ -132,7 +132,7 @@
 							<textField isBlankWhenNull="true">
 								<reportElement x="0" y="0" width="100" height="30" uuid="6fdffe57-41f5-40dc-8663-3bb4fcf5a4a7"/>
 								<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
-									<font fontName="ArialFontCustom"/>
+									<font fontName="Arial"  pdfFontName="Arial"   pdfEncoding="Identity-H" isPdfEmbedded="true"/>
 								</textElement>
 								<textFieldExpression><![CDATA[$F{courseName}]]></textFieldExpression>
 							</textField>
@@ -153,7 +153,7 @@
 							<textField isBlankWhenNull="true">
 								<reportElement x="0" y="0" width="100" height="30" uuid="242bba21-40f9-4bc9-bc66-f3aea45eeaeb"/>
 								<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
-									<font fontName="ArialFontCustom"/>
+									<font fontName="Arial"  pdfFontName="Arial"   pdfEncoding="Identity-H" isPdfEmbedded="true"/>
 								</textElement>
 								<textFieldExpression><![CDATA[$F{startDate}]]></textFieldExpression>
 							</textField>
@@ -174,7 +174,7 @@
 							<textField isBlankWhenNull="true">
 								<reportElement x="0" y="0" width="100" height="30" uuid="e9639d35-71ee-43d0-a527-226140577c33"/>
 								<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
-									<font fontName="ArialFontCustom"/>
+									<font fontName="Arial"  pdfFontName="Arial"   pdfEncoding="Identity-H" isPdfEmbedded="true"/>
 								</textElement>
 								<textFieldExpression><![CDATA[$F{endDate}]]></textFieldExpression>
 							</textField>
@@ -195,7 +195,7 @@
 							<textField isBlankWhenNull="true">
 								<reportElement x="0" y="0" width="100" height="30" uuid="80114442-1ba8-4228-b2ba-bcb9cdd124a0"/>
 								<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
-									<font fontName="ArialFontCustom"/>
+									<font fontName="Arial"  pdfFontName="Arial"   pdfEncoding="Identity-H" isPdfEmbedded="true"/>
 								</textElement>
 								<textFieldExpression><![CDATA[$F{duration}]]></textFieldExpression>
 							</textField>
@@ -216,7 +216,7 @@
 							<textField isBlankWhenNull="true">
 								<reportElement x="0" y="0" width="100" height="30" uuid="5f533dfe-da83-4817-bf7e-bfbc1f94c192"/>
 								<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
-									<font fontName="ArialFontCustom"/>
+									<font fontName="Arial"  pdfFontName="Arial"   pdfEncoding="Identity-H" isPdfEmbedded="true"/>
 								</textElement>
 								<textFieldExpression><![CDATA[$F{job}]]></textFieldExpression>
 							</textField>
@@ -237,7 +237,7 @@
 							<textField isBlankWhenNull="true">
 								<reportElement x="0" y="0" width="100" height="30" uuid="cea28883-fdb7-4c4a-b807-fd60348545cc"/>
 								<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
-									<font fontName="ArialFontCustom"/>
+									<font fontName="Arial"  pdfFontName="Arial"   pdfEncoding="Identity-H" isPdfEmbedded="true"/>
 								</textElement>
 								<textFieldExpression><![CDATA[$F{jobTitle}]]></textFieldExpression>
 							</textField>
@@ -258,7 +258,7 @@
 							<textField isBlankWhenNull="true">
 								<reportElement x="0" y="0" width="100" height="30" uuid="26a7d4d3-5dfb-4f51-873c-231448c6712b"/>
 								<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
-									<font fontName="ArialFontCustom"/>
+									<font fontName="Arial"  pdfFontName="Arial"   pdfEncoding="Identity-H" isPdfEmbedded="true"/>
 								</textElement>
 								<textFieldExpression><![CDATA[$F{department}]]></textFieldExpression>
 							</textField>
@@ -279,7 +279,7 @@
 							<textField isBlankWhenNull="true">
 								<reportElement x="0" y="0" width="100" height="30" uuid="dd907beb-e04a-4c40-a1ab-9aea0dd3dc7f"/>
 								<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
-									<font fontName="ArialFontCustom"/>
+									<font fontName="Arial"  pdfFontName="Arial"   pdfEncoding="Identity-H" isPdfEmbedded="true"/>
 								</textElement>
 								<textFieldExpression><![CDATA[$F{jobCardNo}]]></textFieldExpression>
 							</textField>
@@ -300,7 +300,7 @@
 							<textField isBlankWhenNull="true">
 								<reportElement x="0" y="0" width="100" height="30" uuid="3f09de62-9596-41f5-a3a6-d5c6450ee577"/>
 								<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
-									<font fontName="ArialFontCustom"/>
+									<font fontName="Arial"  pdfFontName="Arial"   pdfEncoding="Identity-H" isPdfEmbedded="true"/>
 								</textElement>
 								<textFieldExpression><![CDATA[$F{requestStatus}]]></textFieldExpression>
 							</textField>
@@ -321,7 +321,7 @@
 							<textField isBlankWhenNull="true">
 								<reportElement x="0" y="0" width="100" height="30" uuid="c4588106-e96e-401d-9015-34e3ee442f5a"/>
 								<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
-									<font fontName="ArialFontCustom"/>
+									<font fontName="Arial"  pdfFontName="Arial"   pdfEncoding="Identity-H" isPdfEmbedded="true"/>
 								</textElement>
 								<textFieldExpression><![CDATA[$F{courseStatus}]]></textFieldExpression>
 							</textField>
