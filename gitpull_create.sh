@@ -1,6 +1,6 @@
 #!/bin/bash
 set -a
-source env_qa.txt
+source env_report_qa.txt
 set +a
 TAG=$1
 docker pull    172.16.0.253:5000/treport:$TAG
