@@ -16,7 +16,7 @@ security:
       clientId: treport
 
 server:
-  port: 9081
+  port: 9085
 
 feign:
   hystrix:

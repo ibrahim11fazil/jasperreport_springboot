@@ -13,6 +13,8 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.validation.Valid;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.io.Resource;
 import org.springframework.web.bind.annotation.CrossOrigin;
@@ -56,6 +58,8 @@ public class ReportController {
     private ReportingService service;
     
     private final FileService fileService;
+
+	private static final Logger logger = LoggerFactory.getLogger(ReportController.class);
     
     public ReportController(FileService fileService) {
     	this.fileService = fileService;
@@ -63,13 +67,13 @@ public class ReportController {
     
 	@GetMapping(value = "/pdfReportDownload/{filename}", produces = "application/pdf; charset=utf-8")
  	public Resource getPDFFileFromFileSystem(@PathVariable String filename, HttpServletResponse response) {
-			System.out.println("filename*********" +filename);
+		logger.info("filename*********" +filename);
 		return fileService.getFileSystem(filename, response);
 	}
 	
 	@GetMapping(value = "/excelReportDownload/{filename}", produces = "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet; charset=utf-8")
  	public Resource getExcelFileFromFileSystem(@PathVariable String filename, HttpServletResponse response) {
-			System.out.println("filename*********" +filename);
+		logger.info("filename*********" +filename);
 		return fileService.getFileSystem(filename, response);
 	}
  
@@ -90,7 +94,7 @@ public class ReportController {
 //				 message="Data found";
 //			  }
 ////		}
-//			  System.out.println(course);
+//			  logger.info(course);
 //		ResponseType response = new ResponseType(200,message,status,course);
 //		return response;
 //	}
@@ -129,7 +133,7 @@ public class ReportController {
     
 //    @GetMapping("/report/{fromDate}/{toDate}/{format}")
 //    public String generateReport(@PathVariable String fromDate,@PathVariable String toDate,@PathVariable String format) throws FileNotFoundException, JRException {
-//       System.out.println("from date"+fromDate);
+//       logger.info("from date"+fromDate);
 //    	
 //    	Date startDate=new Date(fromDate);
 //        Date endDate=new Date(toDate);
@@ -143,9 +147,9 @@ public class ReportController {
 //    public String generateReport(@Valid @RequestBody Map<String,Object>  courseData,@PathVariable String format) throws FileNotFoundException, JRException {
     	public String generateReport(@Valid @RequestBody CourseReport  courseDetailsData,@PathVariable String format) throws FileNotFoundException, JRException {	
        try {
-	    	System.out.println("from date"+courseDetailsData.getStartDate());
-	        System.out.println("to date"+courseDetailsData.getActivationId());
-	        System.out.println("to date"+courseDetailsData.getCourseName());
+		   logger.info("from date"+courseDetailsData.getStartDate());
+		   logger.info("to date"+courseDetailsData.getActivationId());
+		   logger.info("to date"+courseDetailsData.getCourseName());
         
        if(courseDetailsData!=null && courseDetailsData.getActivationId()==null) {
     	   courseDetailsData.setActivationId(0l);
@@ -158,8 +162,8 @@ public class ReportController {
 	     
 //    	Date startDate=new Date(courseData.get("fromDate").toString());
 //        Date endDate=new Date(courseData.get("toDate").toString());
-//         System.out.println(startDate);
-//         System.out.println(endDate);
+//         logger.info(startDate);
+//         logger.info(endDate);
        
        if(courseDetailsData!=null && courseDetailsData.getStartDate()!=null)
     	   courseDetailsData.setStartDate(dateConversion(courseDetailsData.getStartDate()));
@@ -178,10 +182,10 @@ public class ReportController {
     public String generateCourseStatusReport(@Valid @RequestBody CourseStatusReport  courseData,@PathVariable String format) throws FileNotFoundException, JRException {	
     	  try {
     		  CourseStatusReport  courseData1=    courseData;
-  	System.out.println("from date"+courseData1.getStartDate());
-     System.out.println("to date"+courseData1.getDepartment());
-     System.out.println("to date"+courseData1.getJobCardNo());
-     System.out.println("to date"+courseData1.getDuration()); 
+			  logger.info("from date"+courseData1.getStartDate());
+			  logger.info("to date"+courseData1.getDepartment());
+			  logger.info("to date"+courseData1.getJobCardNo());
+			  logger.info("to date"+courseData1.getDuration()); 
      
      if(courseData!=null && courseData.getJobCardNo()==null) {
 	    	courseData.setJobCardNo(0l);
@@ -209,7 +213,7 @@ public class ReportController {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
-	    	  System.out.println(startDate);
+			logger.info(startDate.toString());
 	    	courseData.setStartDate(startDate);
 	    }
 	    
@@ -226,14 +230,14 @@ public class ReportController {
 //	    	String date = simpleDateFormat.format(courseData.getEndDate());
 ////	    	endDate=new Date("09-JAN-20"); 
 //	    	
-//	    	System.out.println(date);
+//	    	logger.info(date);
 //	    	try {
 //				  endDate = simpleDateFormat.parse(date);
 //			} catch (ParseException e) {
 //				// TODO Auto-generated catch block
 //				e.printStackTrace();
 //			}
-//	    	System.out.println(endDate);
+//	    	logger.info(endDate);
 //	    	courseData.setEndDate(endDate);
 //	    }
 	    }catch(Exception ex) {
@@ -247,11 +251,11 @@ public class ReportController {
     @PostMapping("/instructSubjReport/{format}") 
 //    public List<InstructorSubjectReport> generateInstructorSubjectReport(@Valid @RequestBody InstructorSubjectReport  instructSubjData,@PathVariable String format) throws FileNotFoundException, JRException {
       public String generateInstructorSubjectReport(@Valid @RequestBody InstructorSubjectReport   instructSubjData,@PathVariable String format) throws FileNotFoundException, JRException {
-    
+          logger.info("Request for PDF generation");
 //  	Report3  courseData1=   (Report3 ) courseData;
-//  	System.out.println("from date"+courseData1.getCompanyName());
-//     System.out.println("to date"+courseData1.getPriority());
-//     System.out.println("to date"+courseData1.getJobTitle());
+//  	logger.info("from date"+courseData1.getCompanyName());
+//     logger.info("to date"+courseData1.getPriority());
+//     logger.info("to date"+courseData1.getJobTitle());
        
   	return service.exportIntructorSubjectReport(format,instructSubjData); 
   }
@@ -265,15 +269,15 @@ public class ReportController {
   	    	Date endDate=null;
   	    	String pattern = "dd-MMM-yy";
   	    	SimpleDateFormat simpleDateFormat = new SimpleDateFormat("dd-MMM-yy");
-  	    	String date = simpleDateFormat.format(datetoConvert); 
-  	    	System.out.println(date);
+  	    	String date = simpleDateFormat.format(datetoConvert);
+			  logger.info(date);
   	    	try {
   				  convertedDate = simpleDateFormat.parse(date);
   			} catch (ParseException e) {
   				// TODO Auto-generated catch block
   				e.printStackTrace();
   			}
-  	    	System.out.println(endDate);
+  	    	logger.info(endDate.toString());
 //  	    	courseData.setEndDate(endDate);
   	    }
   	    }catch(Exception ex) {
