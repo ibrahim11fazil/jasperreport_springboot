@@ -1,0 +1,7 @@
+FILE=env_qa.txt
+LOG_PATH=/home/sraj/logs
+TMP_PATH=/home/sraj/tmp
+UPLOAD_PATH=/home/sraj/uploads
+DB_URL_CRS=jdbc:oracle:thin:@//172.19.10.18:1521/CSTEST
+DB_USER_REPORT=RPTUSER
+DB_PASSWORD_REPORT=rpt4cstest$

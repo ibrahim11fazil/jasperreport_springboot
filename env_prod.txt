@@ -1,0 +1,7 @@
+FILE=env_qa.txt
+LOG_PATH=/swarm/volumes/data/logs
+TMP_PATH=/swarm/volumes/data/tmp
+UPLOAD_PATH=/swarm/volumes/data/uploads
+DB_URL_CRS=jdbc:oracle:thin:@//172.19.10.18:1521/CSPROD
+DB_USER_REPORT=RPTUSER
+DB_PASSWORD_REPORT=rpt4cstest$
