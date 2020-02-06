@@ -37,24 +37,5 @@ if [ "$1" != "" ]
 fi
 
 
-#set -a
-#TAG=$(git describe --abbrev=0)
-#if [ "$2" = "prod" ]
-#then
-#   TAG=$(git describe --abbrev=0)
-#
-#elif [ "$2" = "qa" ]
-#then
-#    TAG=$(git describe --abbrev=0)
-#else
-#    exit 1
-#fi
-
-#    echo $TAG
-#    docker build .  -t 172.16.0.253:5000/crs_server:$TAG
-#     [ $? -eq 0 ] || exit 1
-#    docker push 172.16.0.253:5000/crs_server:$TAG
-#set +a
-
 
 
