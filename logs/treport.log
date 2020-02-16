@@ -1664,3 +1664,125 @@ Using generated security password: aa5f33de-cb01-4e20-8e27-83ec5ca67164
 @2020-Feb-16 09:30:36.618 INFO  [restartedMain] o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 9085
 @2020-Feb-16 09:30:36.620 INFO  [DiscoveryClient-InstanceInfoReplicator-0] c.n.d.DiscoveryClient - DiscoveryClient_TREPORT/treport:1a1aa9151acce97529d266c83a5ed44e - registration status: 204
 @2020-Feb-16 09:30:36.729 INFO  [restartedMain] c.r.j.JasperApplication - Started JasperApplication in 6.783 seconds (JVM running for 7.714)
+@2020-Feb-16 09:32:07.287 INFO  [http-nio-9085-exec-1] o.a.c.c.C.[.[.[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+@2020-Feb-16 09:32:07.393 INFO  [http-nio-9085-exec-2] c.r.j.c.ReportController - from dateMon Dec 02 00:00:00 AST 2019
+@2020-Feb-16 09:32:07.393 INFO  [http-nio-9085-exec-2] c.r.j.c.ReportController - to datenull
+@2020-Feb-16 09:32:07.393 INFO  [http-nio-9085-exec-2] c.r.j.c.ReportController - to datenull
+@2020-Feb-16 09:32:07.394 INFO  [http-nio-9085-exec-2] c.r.j.c.ReportController - 02-Dec-19
+@2020-Feb-16 09:32:07.395 INFO  [http-nio-9085-exec-2] c.r.j.c.ReportController - 28-Aug-20
+@2020-Feb-16 09:32:15.352 INFO  [http-nio-9085-exec-4] c.r.j.c.ReportController - filename*********CourseDetailsReport.pdf
+@2020-Feb-16 09:32:15.352 INFO  [http-nio-9085-exec-4] c.r.j.s.FileService - resource is CourseDetailsReport.pdf
+@2020-Feb-16 09:35:36.383 INFO  [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+@2020-Feb-16 09:39:08.428 INFO  [http-nio-9085-exec-8] c.r.j.c.ReportController - Request for PDF generation
+@2020-Feb-16 09:39:18.806 INFO  [http-nio-9085-exec-10] c.r.j.c.ReportController - filename*********InstructorSubjectReport.pdf
+@2020-Feb-16 09:39:18.807 INFO  [http-nio-9085-exec-10] c.r.j.s.FileService - resource is InstructorSubjectReport.pdf
+@2020-Feb-16 09:39:30.091 INFO  [http-nio-9085-exec-2] c.r.j.c.ReportController - Request for multiCoursesReport PDF generation
+@2020-Feb-16 09:39:38.094 INFO  [http-nio-9085-exec-5] c.r.j.c.ReportController - filename*********MultiCoursesReport.pdf
+@2020-Feb-16 09:39:38.094 INFO  [http-nio-9085-exec-5] c.r.j.s.FileService - resource is MultiCoursesReport.pdf
+@2020-Feb-16 09:40:36.379 INFO  [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+@2020-Feb-16 09:40:46.100 INFO  [http-nio-9085-exec-9] c.r.j.c.ReportController - Request for multiCoursesReport PDF generation
+@2020-Feb-16 09:40:46.100 INFO  [http-nio-9085-exec-9] c.r.j.c.ReportController - 18-Sep-19
+@2020-Feb-16 09:40:46.101 INFO  [http-nio-9085-exec-9] c.r.j.c.ReportController - 16-Feb-20
+@2020-Feb-16 09:40:49.107 INFO  [http-nio-9085-exec-1] c.r.j.c.ReportController - filename*********MultiCoursesReport.pdf
+@2020-Feb-16 09:40:49.107 INFO  [http-nio-9085-exec-1] c.r.j.s.FileService - resource is MultiCoursesReport.pdf
+@2020-Feb-16 09:41:59.150 INFO  [http-nio-9085-exec-4] c.r.j.c.ReportController - Request for multiCoursesReport PDF generation
+@2020-Feb-16 09:41:59.150 INFO  [http-nio-9085-exec-4] c.r.j.c.ReportController - 18-Sep-19
+@2020-Feb-16 09:41:59.151 INFO  [http-nio-9085-exec-4] c.r.j.c.ReportController - 16-Feb-20
+@2020-Feb-16 09:42:00.770 INFO  [http-nio-9085-exec-6] c.r.j.c.ReportController - filename*********MultiCoursesReport.pdf
+@2020-Feb-16 09:42:00.770 INFO  [http-nio-9085-exec-6] c.r.j.s.FileService - resource is MultiCoursesReport.pdf
+@2020-Feb-16 09:43:51.852 INFO  [http-nio-9085-exec-9] c.r.j.c.ReportController - Request for multiCoursesReport PDF generation
+@2020-Feb-16 09:43:53.310 INFO  [http-nio-9085-exec-1] c.r.j.c.ReportController - filename*********MultiCoursesReport.pdf
+@2020-Feb-16 09:43:53.310 INFO  [http-nio-9085-exec-1] c.r.j.s.FileService - resource is MultiCoursesReport.pdf
+@2020-Feb-16 09:44:21.390 INFO  [http-nio-9085-exec-3] c.r.j.c.ReportController - Request for multiCoursesReport PDF generation
+@2020-Feb-16 09:44:55.960 INFO  [http-nio-9085-exec-5] c.r.j.c.ReportController - Request for multiCoursesReport PDF generation
+@2020-Feb-16 09:45:32.082 INFO  [http-nio-9085-exec-7] c.r.j.c.ReportController - Request for multiCoursesReport PDF generation
+@2020-Feb-16 09:45:33.518 INFO  [http-nio-9085-exec-9] c.r.j.c.ReportController - Request for multiCoursesReport PDF generation
+@2020-Feb-16 09:45:36.363 INFO  [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+@2020-Feb-16 09:45:37.170 INFO  [http-nio-9085-exec-1] c.r.j.c.ReportController - Request for multiCoursesReport PDF generation
+@2020-Feb-16 09:45:38.747 INFO  [http-nio-9085-exec-3] c.r.j.c.ReportController - filename*********MultiCoursesReport.pdf
+@2020-Feb-16 09:45:38.747 INFO  [http-nio-9085-exec-3] c.r.j.s.FileService - resource is MultiCoursesReport.pdf
+@2020-Feb-16 09:46:00.671 INFO  [http-nio-9085-exec-5] c.r.j.c.ReportController - Request for multiCoursesReport PDF generation
+@2020-Feb-16 09:46:02.177 INFO  [http-nio-9085-exec-7] c.r.j.c.ReportController - filename*********MultiCoursesReport.pdf
+@2020-Feb-16 09:46:02.177 INFO  [http-nio-9085-exec-7] c.r.j.s.FileService - resource is MultiCoursesReport.pdf
+@2020-Feb-16 09:46:38.217 INFO  [http-nio-9085-exec-9] c.r.j.c.ReportController - Request for multiCoursesReport PDF generation
+@2020-Feb-16 09:46:39.425 INFO  [http-nio-9085-exec-1] c.r.j.c.ReportController - filename*********MultiCoursesReport.pdf
+@2020-Feb-16 09:46:39.426 INFO  [http-nio-9085-exec-1] c.r.j.s.FileService - resource is MultiCoursesReport.pdf
+@2020-Feb-16 09:46:49.814 INFO  [http-nio-9085-exec-3] c.r.j.c.ReportController - Request for multiCoursesReport PDF generation
+@2020-Feb-16 09:46:51.030 INFO  [http-nio-9085-exec-5] c.r.j.c.ReportController - Request for multiCoursesReport PDF generation
+@2020-Feb-16 09:46:51.668 INFO  [http-nio-9085-exec-7] c.r.j.c.ReportController - Request for multiCoursesReport PDF generation
+@2020-Feb-16 09:46:52.197 INFO  [http-nio-9085-exec-9] c.r.j.c.ReportController - Request for multiCoursesReport PDF generation
+@2020-Feb-16 09:46:52.458 INFO  [http-nio-9085-exec-1] c.r.j.c.ReportController - Request for multiCoursesReport PDF generation
+@2020-Feb-16 09:46:58.982 INFO  [http-nio-9085-exec-3] c.r.j.c.ReportController - Request for multiCoursesReport PDF generation
+@2020-Feb-16 09:46:59.804 INFO  [http-nio-9085-exec-5] c.r.j.c.ReportController - Request for multiCoursesReport PDF generation
+@2020-Feb-16 09:47:00.148 INFO  [http-nio-9085-exec-7] c.r.j.c.ReportController - Request for multiCoursesReport PDF generation
+@2020-Feb-16 09:48:51.387 INFO  [http-nio-9085-exec-10] c.r.j.c.ReportController - Request for multiCoursesReport PDF generation
+@2020-Feb-16 09:48:57.677 INFO  [http-nio-9085-exec-2] c.r.j.c.ReportController - Request for multiCoursesReport PDF generation
+@2020-Feb-16 09:49:05.130 INFO  [http-nio-9085-exec-4] c.r.j.c.ReportController - Request for multiCoursesReport PDF generation
+@2020-Feb-16 09:49:16.168 INFO  [http-nio-9085-exec-6] c.r.j.c.ReportController - Request for multiCoursesReport PDF generation
+@2020-Feb-16 09:49:18.289 INFO  [http-nio-9085-exec-8] c.r.j.c.ReportController - filename*********MultiCoursesReport.pdf
+@2020-Feb-16 09:49:18.289 INFO  [http-nio-9085-exec-8] c.r.j.s.FileService - resource is MultiCoursesReport.pdf
+@2020-Feb-16 09:49:30.728 INFO  [http-nio-9085-exec-10] c.r.j.c.ReportController - Request for multiCoursesReport PDF generation
+@2020-Feb-16 09:49:36.525 INFO  [http-nio-9085-exec-2] c.r.j.c.ReportController - Request for multiCoursesReport PDF generation
+@2020-Feb-16 09:49:59.235 INFO  [http-nio-9085-exec-4] c.r.j.c.ReportController - Request for multiCoursesReport PDF generation
+@2020-Feb-16 09:50:01.789 INFO  [http-nio-9085-exec-6] c.r.j.c.ReportController - filename*********MultiCoursesReport.pdf
+@2020-Feb-16 09:50:01.789 INFO  [http-nio-9085-exec-6] c.r.j.s.FileService - resource is MultiCoursesReport.pdf
+@2020-Feb-16 09:50:36.344 INFO  [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+@2020-Feb-16 09:55:36.335 INFO  [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+@2020-Feb-16 10:00:36.331 INFO  [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+@2020-Feb-16 10:05:36.421 INFO  [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+@2020-Feb-16 10:10:36.420 INFO  [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+@2020-Feb-16 10:15:36.441 INFO  [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+@2020-Feb-16 10:20:36.446 INFO  [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+@2020-Feb-16 10:25:36.450 INFO  [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+@2020-Feb-16 10:30:36.438 INFO  [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+@2020-Feb-16 10:31:59.138 INFO  [http-nio-9085-exec-9] c.r.j.c.ReportController - from datenull
+@2020-Feb-16 10:31:59.138 INFO  [http-nio-9085-exec-9] c.r.j.c.ReportController - to datenull
+@2020-Feb-16 10:31:59.139 INFO  [http-nio-9085-exec-9] c.r.j.c.ReportController - to datenull
+@2020-Feb-16 10:32:04.433 INFO  [http-nio-9085-exec-1] c.r.j.c.ReportController - filename*********CourseDetailsReport.pdf
+@2020-Feb-16 10:32:04.434 INFO  [http-nio-9085-exec-1] c.r.j.s.FileService - resource is CourseDetailsReport.pdf
+@2020-Feb-16 10:35:36.459 INFO  [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+@2020-Feb-16 10:40:36.482 INFO  [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+@2020-Feb-16 10:45:36.477 INFO  [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+@2020-Feb-16 10:50:36.473 INFO  [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+@2020-Feb-16 10:55:36.450 INFO  [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+@2020-Feb-16 11:00:36.430 INFO  [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+@2020-Feb-16 11:05:36.417 INFO  [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+@2020-Feb-16 11:05:36.816 INFO  [http-nio-9085-exec-5] c.r.j.c.ReportController - Request for multiCoursesReport PDF generation
+@2020-Feb-16 11:05:39.705 INFO  [http-nio-9085-exec-7] c.r.j.c.ReportController - filename*********MultiCoursesReport.pdf
+@2020-Feb-16 11:05:39.706 INFO  [http-nio-9085-exec-7] c.r.j.s.FileService - resource is MultiCoursesReport.pdf
+@2020-Feb-16 11:05:48.232 INFO  [http-nio-9085-exec-10] c.r.j.c.ReportController - from datenull
+@2020-Feb-16 11:05:48.232 INFO  [http-nio-9085-exec-10] c.r.j.c.ReportController - to datenull
+@2020-Feb-16 11:05:48.232 INFO  [http-nio-9085-exec-10] c.r.j.c.ReportController - to datenull
+@2020-Feb-16 11:05:49.789 INFO  [http-nio-9085-exec-2] c.r.j.c.ReportController - filename*********CourseDetailsReport.pdf
+@2020-Feb-16 11:05:49.790 INFO  [http-nio-9085-exec-2] c.r.j.s.FileService - resource is CourseDetailsReport.pdf
+@2020-Feb-16 11:06:35.595 INFO  [http-nio-9085-exec-5] c.r.j.c.ReportController - from datenull
+@2020-Feb-16 11:06:35.595 INFO  [http-nio-9085-exec-5] c.r.j.c.ReportController - to datenull
+@2020-Feb-16 11:06:35.595 INFO  [http-nio-9085-exec-5] c.r.j.c.ReportController - to datenull
+@2020-Feb-16 11:06:37.105 INFO  [http-nio-9085-exec-7] c.r.j.c.ReportController - filename*********CourseDetailsReport.pdf
+@2020-Feb-16 11:06:37.105 INFO  [http-nio-9085-exec-7] c.r.j.s.FileService - resource is CourseDetailsReport.pdf
+@2020-Feb-16 11:10:36.407 INFO  [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+@2020-Feb-16 11:11:29.981 INFO  [http-nio-9085-exec-1] c.r.j.c.ReportController - from datenull
+@2020-Feb-16 11:11:29.981 INFO  [http-nio-9085-exec-1] c.r.j.c.ReportController - to datenull
+@2020-Feb-16 11:11:29.982 INFO  [http-nio-9085-exec-1] c.r.j.c.ReportController - to datenull
+@2020-Feb-16 11:11:31.559 INFO  [http-nio-9085-exec-2] c.r.j.c.ReportController - filename*********CourseDetailsReport.pdf
+@2020-Feb-16 11:11:31.559 INFO  [http-nio-9085-exec-2] c.r.j.s.FileService - resource is CourseDetailsReport.pdf
+@2020-Feb-16 11:15:36.399 INFO  [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+@2020-Feb-16 11:20:36.395 INFO  [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+@2020-Feb-16 11:25:36.388 INFO  [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+@2020-Feb-16 11:30:36.361 INFO  [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+@2020-Feb-16 11:35:36.339 INFO  [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+@2020-Feb-16 11:40:36.325 INFO  [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+@2020-Feb-16 11:45:36.315 INFO  [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+@2020-Feb-16 11:50:36.309 INFO  [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+@2020-Feb-16 11:55:36.304 INFO  [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+@2020-Feb-16 12:00:36.300 INFO  [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+@2020-Feb-16 12:05:36.298 INFO  [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+@2020-Feb-16 12:10:36.294 INFO  [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+@2020-Feb-16 12:12:33.030 INFO  [RMI TCP Connection(173)-127.0.0.1] o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+@2020-Feb-16 12:12:33.939 INFO  [RMI TCP Connection(173)-127.0.0.1] o.s.c.n.e.s.EurekaServiceRegistry - Unregistering application TREPORT with eureka with status DOWN
+@2020-Feb-16 12:12:33.949 WARN  [RMI TCP Connection(173)-127.0.0.1] c.n.d.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1581844353948, current=DOWN, previous=UP]
+@2020-Feb-16 12:12:33.965 INFO  [DiscoveryClient-InstanceInfoReplicator-0] c.n.d.DiscoveryClient - DiscoveryClient_TREPORT/treport:1a1aa9151acce97529d266c83a5ed44e: registering service...
+@2020-Feb-16 12:12:34.336 INFO  [DiscoveryClient-InstanceInfoReplicator-0] c.n.d.DiscoveryClient - DiscoveryClient_TREPORT/treport:1a1aa9151acce97529d266c83a5ed44e - registration status: 204
+@2020-Feb-16 12:12:35.871 INFO  [RMI TCP Connection(173)-127.0.0.1] o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+@2020-Feb-16 12:12:36.453 INFO  [RMI TCP Connection(173)-127.0.0.1] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+@2020-Feb-16 12:12:37.572 INFO  [RMI TCP Connection(173)-127.0.0.1] c.n.d.DiscoveryClient - Shutting down DiscoveryClient ...
