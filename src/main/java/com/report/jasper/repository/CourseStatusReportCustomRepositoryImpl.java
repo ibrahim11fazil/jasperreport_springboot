@@ -1,6 +1,8 @@
 package com.report.jasper.repository;   
 import com.report.jasper.entities.CourseStatusReport;
 
+import ch.qos.logback.classic.Logger;
+
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.HashMap;
@@ -35,10 +37,27 @@ public class CourseStatusReportCustomRepositoryImpl  implements CourseStatusRepo
 		    	    conditions.put("jobNo", jobNo);
 		    	    sqlQuery.append(  " AND ( UPPER(COURSE_NAME) like UPPER('%'||:courseName||'%') or :courseName is null) ");
 		    	    conditions.put("courseName", courseName);
-		    	    if(startDate!=null) {
-		    		    	  sqlQuery.append( " AND ( START_DATE= :startDate or :startDate is   null) " );
-		    		    	  conditions.put("startDate", startDate);
-		    		    }
+		    	    if(startDate!=null && endDate!=null)
+		    	    { 
+		    	    	
+		    	    	System.out.println("*****Start and end date " + startDate +"...."+ endDate);
+		    	    	  sqlQuery.append( " AND ( (START_DATE BETWEEN :startDate AND :endDate )) " );
+		    	    	  conditions.put("startDate", startDate);
+		    	    	  conditions.put("endDate", endDate);
+		    		}
+		    	    else if(startDate!=null)
+		    	    { 
+		    	    	  sqlQuery.append( " AND ( START_DATE= :startDate or :startDate is   null) " );
+	    		    	  conditions.put("startDate", startDate);
+	    		    }
+		    	    if(startDate!=null && endDate!=null)
+		    	    { 
+		    	    	
+		    	    	System.out.println("*****Start and end date " + startDate +"...."+ endDate);
+		    	    	  sqlQuery.append( " AND ( (END_DATE BETWEEN :startDate AND :endDate )) " );
+		    	    	  conditions.put("startDate", startDate);
+		    	    	  conditions.put("endDate", endDate);
+		    		}else 
 		    		if(endDate!=null) {
 		    		    	    	sqlQuery.append(  " AND ( END_DATE= :endDate  or :endDate is   null) " );
 		    		    	    	conditions.put("endDate", endDate);

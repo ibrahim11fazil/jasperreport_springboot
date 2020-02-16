@@ -10,11 +10,13 @@ import org.springframework.stereotype.Service;
 import com.report.jasper.entities.CourseReport;
 import com.report.jasper.entities.CourseStatusReport;
 import com.report.jasper.entities.InstructorSubjectReport;
+import com.report.jasper.entities.MultiCoursesReport;
 import com.report.jasper.entities.Report;
 import com.report.jasper.entities.Report2;
 import com.report.jasper.entities.Report3;
 import com.report.jasper.repository.CourseStatusReportRepository;
 import com.report.jasper.repository.InstructorSubjectReportRepository;
+import com.report.jasper.repository.MultiCoursesReportRepository;
 import com.report.jasper.repository.ReportRepository; 
 import net.sf.jasperreports.engine.JRException; 
 import net.sf.jasperreports.engine.JasperCompileManager;
@@ -40,6 +42,8 @@ public class ReportingServiceImpl implements ReportingService {
 	private CourseStatusReportRepository courseStatusrepository;
 	@Autowired
 	private InstructorSubjectReportRepository instructorSubjectrepository;
+	@Autowired
+	private MultiCoursesReportRepository multiCoursesReportRepository;
 	
 	@Value("${file.upload-dir}")
     private String folderLocation;
@@ -307,15 +311,8 @@ public class ReportingServiceImpl implements ReportingService {
 				instSubjReport.getType(),instSubjReport.getJobId(),
 				instSubjReport.getOrganisation(),instSubjReport.getJobTitle(),
 				instSubjReport.getCompanyName(),instSubjReport.getQid(),
-				instSubjReport.getCourse(),instSubjReport.getPriority()); 
-//	   			List<Report3> reports = getAllCountrys3(); 
+				instSubjReport.getCourse(),instSubjReport.getPriority());  
 				
-
-//				if(reports!=null && reports.size()>0) {
-//					reports = getInstructSubjReportData(); 
-//				}else {
-//					result ="No Data Found"; 
-//				} 
 		System.out.println("report Format"+ reportFormat);
 		System.out.println("report size"+ reports);
 		if((reportFormat!=null && !reportFormat.trim().equals(""))
@@ -366,12 +363,105 @@ public class ReportingServiceImpl implements ReportingService {
 		return result= "Report generated Successfully";
 //		return reports;
 	}
+	
+	
+	public String  exportMultiCoursesReport(String reportFormat,MultiCoursesReport multiCoursesReport) throws FileNotFoundException, JRException {
+//		String path = "C:\\Users\\ibrahim.fazil\\Desktop\\Reportss";
+		String path = folderLocation;
+		String result="";
+		List<MultiCoursesReport> reports= null;
+		try { 
+//				reports=new ArrayList<InstructorSubjectReport>();
+				reports = multiCoursesReportRepository.generateMultiCoursesReport(multiCoursesReport.getCourseName(),
+						multiCoursesReport.getStartDate(),multiCoursesReport.getEndDate(),
+						multiCoursesReport.getCourseCoordinator(),multiCoursesReport.getInstructor(),
+						multiCoursesReport.getLocationName(),multiCoursesReport.getOrganisation()); 
+				
+		System.out.println("report Format"+ reportFormat);
+		System.out.println("report size"+ reports);
+		if((reportFormat!=null && !reportFormat.trim().equals(""))
+				&& (reports!=null && reports.size()>0)) {
+					reports.add(0, null);
+		    final InputStream reportInputStream = getClass().getResourceAsStream("/reports/MultiCoursesReport_A4.jrxml");
+			final JasperDesign jasperDesign = JRXmlLoader.load(reportInputStream);
+			JasperReport jasperReport = JasperCompileManager.compileReport(jasperDesign);
+			JRBeanCollectionDataSource jrDataSource = new JRBeanCollectionDataSource(reports);
+			Map<String, Object> parameters = new HashMap<>();
+			parameters.put("CollectionBeanParam", jrDataSource);
+			JasperPrint jasperPrint = JasperFillManager.fillReport(jasperReport, parameters, jrDataSource);
+	
+			if (reportFormat.equalsIgnoreCase("html")) {
+				JasperExportManager.exportReportToHtmlFile(jasperPrint, path + "/MultiCoursesReport.html");
+			} else if (reportFormat.equalsIgnoreCase("pdf")) {
+				JasperExportManager.exportReportToPdfFile(jasperPrint, path + "/MultiCoursesReport.pdf");
+			} else if (reportFormat.equalsIgnoreCase("xls")) {
+				SimpleXlsxReportConfiguration configuration = new SimpleXlsxReportConfiguration();
+				configuration.setOnePagePerSheet(true);
+				configuration.setIgnoreGraphics(false); 
+				File outputFile = new File( path + "/MultiCoursesReport.xlsx");
+				ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
+				OutputStream fileOutputStream = new FileOutputStream(outputFile);
+				Exporter exporter = new JRXlsxExporter();
+				exporter.setExporterInput(new SimpleExporterInput(jasperPrint));
+				exporter.setExporterOutput(new SimpleOutputStreamExporterOutput(byteArrayOutputStream));
+				exporter.setConfiguration(configuration);
+				exporter.exportReport();
+				try {
+					byteArrayOutputStream.writeTo(fileOutputStream);
+				} catch (IOException e) { 
+					e.printStackTrace();
+					result="Exception Occured While generating Report :IO Exception";
+					return result; 
+				}
+			}
 
-	 public String printPDFExcelRepor(String result) {
-		 result="";
-		 try {
-			 
-			 
+		}else {
+			return result= "No Data Found";
+		}
+		
+	} catch (Exception e) { 
+		e.printStackTrace();
+		result="Exception Occured While generating Report : Exception"; 
+	}
+		return result= "Report generated Successfully"; 
+	}
+
+
+	 public String printPDFExcelReport(String reportFormat,String path,String filename,ArrayList<Object> reports) {
+		 String result="";
+		 try { 
+				    final InputStream reportInputStream = getClass().getResourceAsStream("/reports"+filename+".jrxml");
+					final JasperDesign jasperDesign = JRXmlLoader.load(reportInputStream);
+					JasperReport jasperReport = JasperCompileManager.compileReport(jasperDesign);
+					JRBeanCollectionDataSource jrDataSource = new JRBeanCollectionDataSource(reports);
+					Map<String, Object> parameters = new HashMap<>();
+					parameters.put("CollectionBeanParam", jrDataSource);
+					JasperPrint jasperPrint = JasperFillManager.fillReport(jasperReport, parameters, jrDataSource);
+			
+					if (reportFormat.equalsIgnoreCase("html")) {
+						JasperExportManager.exportReportToHtmlFile(jasperPrint, path+filename+".html");
+					} else if (reportFormat.equalsIgnoreCase("pdf")) {
+						JasperExportManager.exportReportToPdfFile(jasperPrint, path+filename+".pdf");
+					} else if (reportFormat.equalsIgnoreCase("xls")) {
+						SimpleXlsxReportConfiguration configuration = new SimpleXlsxReportConfiguration();
+						configuration.setOnePagePerSheet(true);
+						configuration.setIgnoreGraphics(false); 
+						File outputFile = new File( path+filename+".xlsx");
+						ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
+						OutputStream fileOutputStream = new FileOutputStream(outputFile);
+						Exporter exporter = new JRXlsxExporter();
+						exporter.setExporterInput(new SimpleExporterInput(jasperPrint));
+						exporter.setExporterOutput(new SimpleOutputStreamExporterOutput(byteArrayOutputStream));
+						exporter.setConfiguration(configuration);
+						exporter.exportReport();
+						try {
+							byteArrayOutputStream.writeTo(fileOutputStream);
+						} catch (IOException e) { 
+							e.printStackTrace();
+							result="Exception Occured While generating Report :IO Exception";
+							return result; 
+						}
+					} 
 		 }catch(Exception ex) {
 //			 ex.printStackTrace();
 			  result= "Error while Printing :"+result ; 

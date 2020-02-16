@@ -31,6 +31,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.report.jasper.entities.CourseReport;
 import com.report.jasper.entities.CourseStatusReport;
 import com.report.jasper.entities.InstructorSubjectReport;
+import com.report.jasper.entities.MultiCoursesReport;
 import com.report.jasper.entities.Report;
 import com.report.jasper.entities.Report2;
 import com.report.jasper.entities.Report3;
@@ -196,26 +197,7 @@ public class ReportController {
 	    	courseData.setDuration(new Long(0l));
 	    }
 	    
-	    
-	  
-	    if(courseData!=null && courseData.getStartDate()==null) {
-//	    	String
-//	    	courseData.setStartDate(new Date());
-	    }else {
-	    	Date startDate=null;
-	    	String pattern = "dd-MMM-yy";
-	    	SimpleDateFormat simpleDateFormat = new SimpleDateFormat("dd-MMM-yy");
-	    	String date = simpleDateFormat.format(courseData.getStartDate());
-	  
-	    	try {
-				  startDate = simpleDateFormat.parse(date);
-			} catch (ParseException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
-			logger.info(startDate.toString());
-	    	courseData.setStartDate(startDate);
-	    }
+	     
 	    
 	    if(courseData!=null && courseData.getStartDate()!=null)
 	    	courseData.setStartDate(dateConversion(courseData.getStartDate()));
@@ -261,14 +243,29 @@ public class ReportController {
   }
     
     
+    @PostMapping("/multiCoursesReport/{format}")  
+    public String generateMultiCoursesReport(@Valid @RequestBody MultiCoursesReport   multiCoursesReport,@PathVariable String format) throws FileNotFoundException, JRException {
+        logger.info("Request for multiCoursesReport PDF generation");
+//	Report3  courseData1=   (Report3 ) courseData;
+//	logger.info("from date"+courseData1.getCompanyName());
+//   logger.info("to date"+courseData1.getPriority());
+//   logger.info("to date"+courseData1.getJobTitle());
+        if(multiCoursesReport!=null && multiCoursesReport.getStartDate()!=null)
+        	multiCoursesReport.setStartDate(dateConversion(multiCoursesReport.getStartDate()));
+ 	    
+ 	    if(multiCoursesReport!=null && multiCoursesReport.getEndDate()!=null)
+ 	    	multiCoursesReport.setEndDate(dateConversion(multiCoursesReport.getEndDate()));
+	return service.exportMultiCoursesReport(format, multiCoursesReport);
+}
+    
+    
     
     public Date dateConversion(Date datetoConvert) {
     	Date convertedDate=null;
     	try {
-    	  if(datetoConvert!=null ) { 
-  	    	Date endDate=null;
+    	  if(datetoConvert!=null ) {  
   	    	String pattern = "dd-MMM-yy";
-  	    	SimpleDateFormat simpleDateFormat = new SimpleDateFormat("dd-MMM-yy");
+  	    	SimpleDateFormat simpleDateFormat = new SimpleDateFormat(pattern);
   	    	String date = simpleDateFormat.format(datetoConvert);
 			  logger.info(date);
   	    	try {
@@ -276,8 +273,7 @@ public class ReportController {
   			} catch (ParseException e) {
   				// TODO Auto-generated catch block
   				e.printStackTrace();
-  			}
-  	    	logger.info(endDate.toString());
+  			} 
 //  	    	courseData.setEndDate(endDate);
   	    }
   	    }catch(Exception ex) {
@@ -288,46 +284,36 @@ public class ReportController {
     
     
     
-    private static final String EXTERNAL_FILE_PATH = "C:\\Users\\ibrahim.fazil\\Desktop\\Reportss\\";
-
-	@PostMapping("/file/{fileName}")
-	public void downloadPDFResource(HttpServletRequest request, HttpServletResponse response,
-			@PathVariable("fileName") String fileName) throws IOException {
-
-		File file = new File(EXTERNAL_FILE_PATH + fileName);
-		if (file.exists()) {
-
-			//get the mimetype
-			String mimeType = URLConnection.guessContentTypeFromName(file.getName());
-			if (mimeType == null) {
-				//unknown mimetype so set the mimetype to application/octet-stream
-				mimeType = "application/octet-stream";
-			}
-
-			response.setContentType(mimeType);
-
-			/**
-			 * In a regular HTTP response, the Content-Disposition response header is a
-			 * header indicating if the content is expected to be displayed inline in the
-			 * browser, that is, as a Web page or as part of a Web page, or as an
-			 * attachment, that is downloaded and saved locally.
-			 * 
-			 */
-
-			/**
-			 * Here we have mentioned it to show inline
-			 */
-			response.setHeader("Content-Disposition", String.format("inline; filename=\"" + file.getName() + "\""));
-
-			 //Here we have mentioned it to show as attachment
-			 //response.setHeader("Content-Disposition", String.format("attachment; filename=\"" + file.getName() + "\""));
-
-			response.setContentLength((int) file.length());
-
-			InputStream inputStream = new BufferedInputStream(new FileInputStream(file));
-
-			FileCopyUtils.copy(inputStream, response.getOutputStream());
-
-		}
-	}
+//    private static final String EXTERNAL_FILE_PATH = "C:\\Users\\ibrahim.fazil\\Desktop\\Reportss\\";
+//
+//	@PostMapping("/file/{fileName}")
+//	public void downloadPDFResource(HttpServletRequest request, HttpServletResponse response,
+//			@PathVariable("fileName") String fileName) throws IOException {
+//
+//		File file = new File(EXTERNAL_FILE_PATH + fileName);
+//		if (file.exists()) {
+//
+//			//get the mimetype
+//			String mimeType = URLConnection.guessContentTypeFromName(file.getName());
+//			if (mimeType == null) {
+//				//unknown mimetype so set the mimetype to application/octet-stream
+//				mimeType = "application/octet-stream";
+//			}
+//
+//			response.setContentType(mimeType);
+//
+//		 
+//			response.setHeader("Content-Disposition", String.format("inline; filename=\"" + file.getName() + "\""));
+//
+//			 //Here we have mentioned it to show as attachment
+//			 //response.setHeader("Content-Disposition", String.format("attachment; filename=\"" + file.getName() + "\""));
+//
+//			response.setContentLength((int) file.length());
+//
+//			InputStream inputStream = new BufferedInputStream(new FileInputStream(file));
+//
+//			FileCopyUtils.copy(inputStream, response.getOutputStream());
+//
+//		}
+//	}
 }

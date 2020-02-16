@@ -42,14 +42,38 @@ public class ReportCustomRepositoryImpl  implements ReportCustomRepository  {
 			    	    conditions.put("duration", duration);
 			    	    sqlQuery.append(  " AND (ACTIVATION_ID  like '%'||:activationId||'%'  or :activationId = '0' or :activationId is null) ");
 			    	    conditions.put("activationId", activationId);
-			    	    if(startDate!=null) {
-			    		    	  sqlQuery.append( " AND (START_DATE= :startDate or :startDate is   null) " );
-			    		    	  conditions.put("startDate", startDate);
-			    		    }
+			    	    if(startDate!=null && endDate!=null)
+			    	    {  	
+			    	    	System.out.println("*****Start and end date " + startDate +"...."+ endDate);
+			    	    	  sqlQuery.append( " AND ( (START_DATE BETWEEN :startDate AND :endDate )) " );
+			    	    	  conditions.put("startDate", startDate);
+			    	    	  conditions.put("endDate", endDate);
+			    		}
+			    	    else if(startDate!=null)
+			    	    { 
+			    	    	  sqlQuery.append( " AND ( START_DATE= :startDate or :startDate is   null) " );
+		    		    	  conditions.put("startDate", startDate);
+		    		    }
+			    	    if(startDate!=null && endDate!=null)
+			    	    { 
+			    	    	
+			    	    	System.out.println("*****Start and end date " + startDate +"...."+ endDate);
+			    	    	  sqlQuery.append( " AND ( (END_DATE BETWEEN :startDate AND :endDate )) " );
+			    	    	  conditions.put("startDate", startDate);
+			    	    	  conditions.put("endDate", endDate);
+			    		}else 
 			    		if(endDate!=null) {
 			    		    	    	sqlQuery.append(  " AND ( END_DATE= :endDate  or :endDate is   null) " );
 			    		    	    	conditions.put("endDate", endDate);
 				    		    	    }
+//			    	    if(startDate!=null) {
+//			    		    	  sqlQuery.append( " AND (START_DATE= :startDate or :startDate is   null) " );
+//			    		    	  conditions.put("startDate", startDate);
+//			    		    }
+//			    		if(endDate!=null) {
+//			    		    	    	sqlQuery.append(  " AND ( END_DATE= :endDate  or :endDate is   null) " );
+//			    		    	    	conditions.put("endDate", endDate);
+//				    		    	    }
 						sqlQuery.append(  " AND ( UPPER(CATEGORY) like UPPER('%'||:category||'%') or :category is   null) "   );
 						conditions.put("category", category);
 						sqlQuery.append(  " AND ( UPPER(HALL) like UPPER('%'||:hall||'%') or :hall is  null) "  );

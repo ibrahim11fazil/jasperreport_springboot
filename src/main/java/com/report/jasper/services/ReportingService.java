@@ -8,6 +8,7 @@ import java.util.List;
 import com.report.jasper.entities.CourseReport;
 import com.report.jasper.entities.CourseStatusReport;
 import com.report.jasper.entities.InstructorSubjectReport;
+import com.report.jasper.entities.MultiCoursesReport;
 import com.report.jasper.entities.Report;
 import com.report.jasper.entities.Report2;
 import com.report.jasper.entities.Report3;
@@ -20,7 +21,7 @@ public interface ReportingService {
 	public String exportReport(String reportFormat,CourseReport courseData) throws FileNotFoundException, JRException ;
 	public String exportCourseStatusReport(String reportFormat,CourseStatusReport courseReport) throws FileNotFoundException, JRException;
     public String exportIntructorSubjectReport(String reportFormat,InstructorSubjectReport courseReport) throws FileNotFoundException, JRException ;
-   
+    public String  exportMultiCoursesReport(String reportFormat,MultiCoursesReport multiCoursesReport) throws FileNotFoundException, JRException ;
     List<CourseReport> getCourseReportData();
     List<CourseStatusReport> getCourseStatusReportData();
     List<InstructorSubjectReport> getInstructSubjReportData();
