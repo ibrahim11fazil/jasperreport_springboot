@@ -1,22 +1,30 @@
 package com.report.jasper.entities;
 
+import java.io.Serializable;
 import java.util.Date;
 
 import javax.persistence.Column;
 import javax.persistence.Entity; 
 import javax.persistence.Id;
+import javax.persistence.IdClass;
 import javax.persistence.Table;
 
 @Entity 
 @Table(name="TAC_COURSE_DETAILS_VIEW")
-public class CourseReport {
+@IdClass(CourseReportCompositeKey.class)
+public class CourseReport implements Serializable {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	@Id
 	@Column(name="COURSE_ID")
 	private Long id; 
-	@Column(name="COURSE_NAME")
-	private String courseName;
+	@Id
 	@Column(name="ACTIVATION_ID")
 	private Long activationId;
+	@Column(name="COURSE_NAME")
+	private String courseName; 
 	@Column(name="DURATION")
 	private Long duration;
 	@Column(name="START_DATE")
@@ -32,7 +40,8 @@ public class CourseReport {
 	@Column(name="INSTRUCTOR")
 	private String instructor;
 	
-	
+	 public CourseReport() { 
+	 }
 	
 	
 	public Long getId() {

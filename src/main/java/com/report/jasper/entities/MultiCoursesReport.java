@@ -5,12 +5,20 @@ import java.util.Date;
 import javax.persistence.Column;
 import javax.persistence.Entity; 
 import javax.persistence.Id;
+import javax.persistence.IdClass;
 import javax.persistence.Table;
 
 @Entity 
-@Table(name="TAC_INSTRUCTOR_SUBJECT_VIEW")
+@Table(name="TAC_MULTI_COURSES_DETAILS_VIEW")
+@IdClass(MultiCoursesReportCompositeKey.class)
 public class MultiCoursesReport { 
+	
 	@Id
+	@Column(name="COURSE_ID")
+	private Long id; 
+	@Id
+	@Column(name="ACTIVATION_ID")
+	private Long activationId;
 	@Column(name="COURSE_NAME")
 	private String courseName;
 	@Column(name="START_DATE")
@@ -25,6 +33,23 @@ public class MultiCoursesReport {
 	private String locationName;
 	@Column(name="ORGANIZATION")
 	private String organisation;
+	
+	public MultiCoursesReport() { 
+	}
+	
+	
+	public Long getId() {
+		return id;
+	}
+	public void setId(Long id) {
+		this.id = id;
+	}
+	public Long getActivationId() {
+		return activationId;
+	}
+	public void setActivationId(Long activationId) {
+		this.activationId = activationId;
+	}
 	public String getCourseName() {
 		return courseName;
 	}

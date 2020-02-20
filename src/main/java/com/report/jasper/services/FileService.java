@@ -1,5 +1,4 @@
-package com.report.jasper.services;
-import com.report.jasper.controller.ReportController;
+package com.report.jasper.services; 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;
@@ -19,26 +18,16 @@ public class FileService {
 		CLASSPATH
 	}
 	    @Value("${file.upload-dir}")
-	    private String folderLocation;
-	   
-	private static final String FILE_DIRECTORY = "C:\\Users\\ibrahim.fazil\\Desktop\\Reportss\\";
-//	   private static final String FILE_DIRECTORY = folderLocation+"/" ;
-	   String path = folderLocation + "/" ;
-	/**
-	 * @param filename filename
-	 * @param response Http response.
-	 * @return file from system.
-	 */
-	public Resource getFileSystem(String filename, HttpServletResponse response) {
-		 
-		return getResource(filename, response, ResourceType.FILE_SYSTEM);
-	}
+	    private String folderLocation; 
+	    
+	    String path = folderLocation + "/" ;
+	    
+	    private static final String FILE_DIRECTORY = "C:\\Users\\ibrahim.fazil\\Desktop\\Reportss\\";
  
-	/**
-	 * @param filename filename
-	 * @param response Http response.
-	 * @return file from classpath.
-	 */
+	public Resource getFileSystem(String filename, HttpServletResponse response) { 
+		return getResource(filename, response, ResourceType.FILE_SYSTEM);
+	} 
+	
 	public Resource getClassPathFile(String filename, HttpServletResponse response) {
 		return getResource(filename, response, ResourceType.CLASSPATH);
 	}
@@ -53,8 +42,7 @@ public class FileService {
 			response.setContentType("application/vnd.openxmlformats-officedocument.spreadsheetml.sheet");
 			response.setHeader("Content-Disposition", "attachment; filename=" + filename);
 			response.setHeader("filename", filename);
-		}
- 
+		} 
 		Resource resource = null;
 		switch (resourceType) {
 			case FILE_SYSTEM:
@@ -65,8 +53,7 @@ public class FileService {
 			case CLASSPATH:
 				resource = new ClassPathResource("data/" + filename);
 				break;
-		}
- 
+		} 
 		return resource;
 	}
 }

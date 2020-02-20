@@ -1,16 +1,24 @@
 package com.report.jasper.entities;
-
-import java.util.Date;
-
+ 
 import javax.persistence.Column;
 import javax.persistence.Entity; 
 import javax.persistence.Id;
+import javax.persistence.IdClass;
 import javax.persistence.Table;
 
 @Entity 
 @Table(name="TAC_INSTRUCTOR_SUBJECT_VIEW")
+@IdClass(InstructorSubjectReportCompositeKey.class)
 public class InstructorSubjectReport { 
+	
+	
+	
 	@Id
+	@Column(name="INSTRUCTOR_ID")
+	private Long instructorId;
+	@Id
+	@Column(name="SUBJECT_ID")
+	private Long subjectId;
 	@Column(name="NAME")
 	private String name;
 	@Column(name="TYPE")
@@ -32,6 +40,22 @@ public class InstructorSubjectReport {
 	@Column(name="PRIORITY")
 	private String priority;
 	 
+	
+	
+	
+	 
+	public Long getInstructorId() {
+		return instructorId;
+	}
+	public void setInstructorId(Long instructorId) {
+		this.instructorId = instructorId;
+	}
+	public Long getSubjectId() {
+		return subjectId;
+	}
+	public void setSubjectId(Long subjectId) {
+		this.subjectId = subjectId;
+	}
 	public String getName() {
 		return name;
 	}

@@ -1,0 +1,562 @@
+@2020-Feb-20 07:06:41.001 INFO  [restartedMain] c.r.j.JasperApplication - No active profile set, falling back to default profiles: default
+@2020-Feb-20 07:06:41.619 INFO  [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+@2020-Feb-20 07:06:41.696 INFO  [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 70ms. Found 4 JPA repository interfaces.
+@2020-Feb-20 07:06:41.910 INFO  [restartedMain] o.s.c.c.s.GenericScope - BeanFactory id=7f1e4180-3561-33ef-8301-cd8cdb2d8157
+@2020-Feb-20 07:06:42.014 INFO  [restartedMain] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+@2020-Feb-20 07:06:42.041 INFO  [restartedMain] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration' of type [org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+@2020-Feb-20 07:06:42.044 INFO  [restartedMain] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'objectPostProcessor' of type [org.springframework.security.config.annotation.configuration.AutowireBeanFactoryObjectPostProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+@2020-Feb-20 07:06:42.047 INFO  [restartedMain] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@4fc7364e' of type [org.springframework.security.oauth2.provider.expression.OAuth2MethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+@2020-Feb-20 07:06:42.049 INFO  [restartedMain] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration' of type [org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+@2020-Feb-20 07:06:42.052 INFO  [restartedMain] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+@2020-Feb-20 07:06:42.063 INFO  [restartedMain] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$36bcf4c1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+@2020-Feb-20 07:06:42.485 INFO  [restartedMain] o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port(s): 9085 (http)
+@2020-Feb-20 07:06:42.492 INFO  [restartedMain] o.a.c.c.StandardService - Starting service [Tomcat]
+@2020-Feb-20 07:06:42.492 INFO  [restartedMain] o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.30]
+@2020-Feb-20 07:06:42.644 INFO  [restartedMain] o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext
+@2020-Feb-20 07:06:43.284 INFO  [restartedMain] c.z.h.HikariDataSource - HikariPool-1 - Starting...
+@2020-Feb-20 07:06:44.416 INFO  [restartedMain] c.z.h.HikariDataSource - HikariPool-1 - Start completed.
+@2020-Feb-20 07:07:57.703 INFO  [restartedMain] c.r.j.JasperApplication - No active profile set, falling back to default profiles: default
+@2020-Feb-20 07:07:58.225 INFO  [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+@2020-Feb-20 07:07:58.293 INFO  [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 62ms. Found 4 JPA repository interfaces.
+@2020-Feb-20 07:07:58.490 INFO  [restartedMain] o.s.c.c.s.GenericScope - BeanFactory id=7f1e4180-3561-33ef-8301-cd8cdb2d8157
+@2020-Feb-20 07:07:58.590 INFO  [restartedMain] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+@2020-Feb-20 07:07:58.612 INFO  [restartedMain] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration' of type [org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+@2020-Feb-20 07:07:58.616 INFO  [restartedMain] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'objectPostProcessor' of type [org.springframework.security.config.annotation.configuration.AutowireBeanFactoryObjectPostProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+@2020-Feb-20 07:07:58.619 INFO  [restartedMain] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@5aed8963' of type [org.springframework.security.oauth2.provider.expression.OAuth2MethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+@2020-Feb-20 07:07:58.620 INFO  [restartedMain] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration' of type [org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+@2020-Feb-20 07:07:58.622 INFO  [restartedMain] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+@2020-Feb-20 07:07:58.633 INFO  [restartedMain] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$beb8a3eb] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+@2020-Feb-20 07:07:59.006 INFO  [restartedMain] o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port(s): 9085 (http)
+@2020-Feb-20 07:07:59.014 INFO  [restartedMain] o.a.c.c.StandardService - Starting service [Tomcat]
+@2020-Feb-20 07:07:59.014 INFO  [restartedMain] o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.30]
+@2020-Feb-20 07:07:59.163 INFO  [restartedMain] o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext
+@2020-Feb-20 07:07:59.639 INFO  [restartedMain] c.z.h.HikariDataSource - HikariPool-1 - Starting...
+@2020-Feb-20 07:07:59.768 INFO  [restartedMain] c.z.h.HikariDataSource - HikariPool-1 - Start completed.
+@2020-Feb-20 07:08:10.396 INFO  [restartedMain] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+@2020-Feb-20 07:08:15.931 WARN  [restartedMain] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+@2020-Feb-20 07:08:17.127 INFO  [restartedMain] o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: adb561e4-683c-4fcf-9f10-23e43fdf9f9d
+
+@2020-Feb-20 07:08:24.404 INFO  [restartedMain] o.s.s.w.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5b295ed7, org.springframework.security.web.context.SecurityContextPersistenceFilter@6413c8e5, org.springframework.security.web.header.HeaderWriterFilter@319dd5e4, org.springframework.security.web.authentication.logout.LogoutFilter@31f0331c, org.springframework.security.oauth2.provider.authentication.OAuth2AuthenticationProcessingFilter@38ca7964, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@660a02e4, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@245c4aad, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4fd89a37, org.springframework.security.web.session.SessionManagementFilter@43faf723, org.springframework.security.web.access.ExceptionTranslationFilter@48248f04, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7e6bbfb]
+@2020-Feb-20 07:08:24.467 WARN  [restartedMain] c.n.c.s.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+@2020-Feb-20 07:08:24.468 INFO  [restartedMain] c.n.c.s.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+@2020-Feb-20 07:08:24.544 WARN  [restartedMain] c.n.c.s.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+@2020-Feb-20 07:08:24.545 INFO  [restartedMain] c.n.c.s.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+@2020-Feb-20 07:08:28.980 INFO  [restartedMain] o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+@2020-Feb-20 07:08:32.556 INFO  [restartedMain] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+@2020-Feb-20 07:08:34.647 INFO  [restartedMain] o.s.c.n.e.InstanceInfoFactory - Setting initial instance status as: STARTING
+@2020-Feb-20 07:08:35.559 INFO  [restartedMain] c.n.d.DiscoveryClient - Initializing Eureka in region us-east-1
+@2020-Feb-20 07:08:37.580 INFO  [restartedMain] c.n.d.p.DiscoveryJerseyProvider - Using JSON encoding codec LegacyJacksonJson
+@2020-Feb-20 07:08:37.580 INFO  [restartedMain] c.n.d.p.DiscoveryJerseyProvider - Using JSON decoding codec LegacyJacksonJson
+@2020-Feb-20 07:08:40.766 INFO  [restartedMain] c.n.d.p.DiscoveryJerseyProvider - Using XML encoding codec XStreamXml
+@2020-Feb-20 07:08:40.766 INFO  [restartedMain] c.n.d.p.DiscoveryJerseyProvider - Using XML decoding codec XStreamXml
+@2020-Feb-20 07:08:43.020 INFO  [restartedMain] c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+@2020-Feb-20 07:08:43.659 INFO  [restartedMain] c.n.d.DiscoveryClient - Disable delta property : false
+@2020-Feb-20 07:08:43.659 INFO  [restartedMain] c.n.d.DiscoveryClient - Single vip registry refresh property : null
+@2020-Feb-20 07:08:43.660 INFO  [restartedMain] c.n.d.DiscoveryClient - Force full registry fetch : false
+@2020-Feb-20 07:08:43.660 INFO  [restartedMain] c.n.d.DiscoveryClient - Application is null : false
+@2020-Feb-20 07:08:43.660 INFO  [restartedMain] c.n.d.DiscoveryClient - Registered Applications size is zero : true
+@2020-Feb-20 07:08:43.661 INFO  [restartedMain] c.n.d.DiscoveryClient - Application version is -1: true
+@2020-Feb-20 07:08:43.661 INFO  [restartedMain] c.n.d.DiscoveryClient - Getting all instance registry info from the eureka server
+@2020-Feb-20 07:08:47.478 INFO  [restartedMain] c.n.d.DiscoveryClient - The response status is 200
+@2020-Feb-20 07:08:47.528 INFO  [restartedMain] c.n.d.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+@2020-Feb-20 07:08:47.536 INFO  [restartedMain] c.n.d.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+@2020-Feb-20 07:08:47.609 INFO  [restartedMain] c.n.d.DiscoveryClient - Discovery Client initialized at timestamp 1582171727545 with initial instances count: 11
+@2020-Feb-20 07:08:47.613 INFO  [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry - Registering application TREPORT with eureka with status UP
+@2020-Feb-20 07:08:47.614 INFO  [restartedMain] c.n.d.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1582171727614, current=UP, previous=STARTING]
+@2020-Feb-20 07:08:47.616 INFO  [DiscoveryClient-InstanceInfoReplicator-0] c.n.d.DiscoveryClient - DiscoveryClient_TREPORT/treport:ff3191a04038ef94ba7f0be3f37609f3: registering service...
+@2020-Feb-20 07:08:48.215 INFO  [DiscoveryClient-InstanceInfoReplicator-0] c.n.d.DiscoveryClient - DiscoveryClient_TREPORT/treport:ff3191a04038ef94ba7f0be3f37609f3 - registration status: 204
+@2020-Feb-20 07:08:49.138 INFO  [restartedMain] o.s.b.w.e.t.TomcatWebServer - Tomcat started on port(s): 9085 (http) with context path ''
+@2020-Feb-20 07:08:49.140 INFO  [restartedMain] o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 9085
+@2020-Feb-20 07:08:49.314 INFO  [restartedMain] c.r.j.JasperApplication - Started JasperApplication in 52.63 seconds (JVM running for 53.527)
+@2020-Feb-20 07:13:43.631 INFO  [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+@2020-Feb-20 07:18:43.633 INFO  [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+@2020-Feb-20 07:23:43.631 INFO  [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+@2020-Feb-20 07:28:43.583 INFO  [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+@2020-Feb-20 07:30:51.850 INFO  [RMI TCP Connection(35)-127.0.0.1] o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+@2020-Feb-20 07:30:51.851 INFO  [RMI TCP Connection(35)-127.0.0.1] o.s.c.n.e.s.EurekaServiceRegistry - Unregistering application TREPORT with eureka with status DOWN
+@2020-Feb-20 07:30:51.851 WARN  [RMI TCP Connection(35)-127.0.0.1] c.n.d.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1582173051851, current=DOWN, previous=UP]
+@2020-Feb-20 07:30:51.852 INFO  [DiscoveryClient-InstanceInfoReplicator-0] c.n.d.DiscoveryClient - DiscoveryClient_TREPORT/treport:ff3191a04038ef94ba7f0be3f37609f3: registering service...
+@2020-Feb-20 07:30:51.856 INFO  [RMI TCP Connection(35)-127.0.0.1] o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+@2020-Feb-20 07:30:51.860 INFO  [DiscoveryClient-InstanceInfoReplicator-0] c.n.d.DiscoveryClient - DiscoveryClient_TREPORT/treport:ff3191a04038ef94ba7f0be3f37609f3 - registration status: 204
+@2020-Feb-20 07:30:51.960 INFO  [RMI TCP Connection(35)-127.0.0.1] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+@2020-Feb-20 07:30:51.993 INFO  [RMI TCP Connection(35)-127.0.0.1] c.n.d.DiscoveryClient - Shutting down DiscoveryClient ...
+@2020-Feb-20 07:30:54.995 INFO  [RMI TCP Connection(35)-127.0.0.1] c.n.d.DiscoveryClient - Unregistering ...
+@2020-Feb-20 07:30:55.001 INFO  [RMI TCP Connection(35)-127.0.0.1] c.n.d.DiscoveryClient - DiscoveryClient_TREPORT/treport:ff3191a04038ef94ba7f0be3f37609f3 - deregister  status: 200
+@2020-Feb-20 07:30:55.070 INFO  [RMI TCP Connection(35)-127.0.0.1] c.n.d.DiscoveryClient - Completed shut down of DiscoveryClient
+@2020-Feb-20 07:30:55.071 INFO  [RMI TCP Connection(35)-127.0.0.1] c.z.h.HikariDataSource - HikariPool-1 - Shutdown initiated...
+@2020-Feb-20 07:30:55.131 INFO  [RMI TCP Connection(35)-127.0.0.1] c.z.h.HikariDataSource - HikariPool-1 - Shutdown completed.
+@2020-Feb-20 07:30:55.248 INFO  [RMI TCP Connection(35)-127.0.0.1] o.a.c.c.StandardService - Stopping service [Tomcat]
+@2020-Feb-20 07:31:09.981 INFO  [restartedMain] c.r.j.JasperApplication - No active profile set, falling back to default profiles: default
+@2020-Feb-20 07:31:10.491 INFO  [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+@2020-Feb-20 07:31:10.559 INFO  [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 62ms. Found 4 JPA repository interfaces.
+@2020-Feb-20 07:31:10.752 INFO  [restartedMain] o.s.c.c.s.GenericScope - BeanFactory id=7f1e4180-3561-33ef-8301-cd8cdb2d8157
+@2020-Feb-20 07:31:10.849 INFO  [restartedMain] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+@2020-Feb-20 07:31:10.872 INFO  [restartedMain] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration' of type [org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+@2020-Feb-20 07:31:10.875 INFO  [restartedMain] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'objectPostProcessor' of type [org.springframework.security.config.annotation.configuration.AutowireBeanFactoryObjectPostProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+@2020-Feb-20 07:31:10.878 INFO  [restartedMain] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@2ed752c0' of type [org.springframework.security.oauth2.provider.expression.OAuth2MethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+@2020-Feb-20 07:31:10.879 INFO  [restartedMain] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration' of type [org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+@2020-Feb-20 07:31:10.881 INFO  [restartedMain] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+@2020-Feb-20 07:31:10.892 INFO  [restartedMain] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$57ef22af] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+@2020-Feb-20 07:31:11.367 INFO  [restartedMain] o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port(s): 9085 (http)
+@2020-Feb-20 07:31:11.375 INFO  [restartedMain] o.a.c.c.StandardService - Starting service [Tomcat]
+@2020-Feb-20 07:31:11.375 INFO  [restartedMain] o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.30]
+@2020-Feb-20 07:31:11.520 INFO  [restartedMain] o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext
+@2020-Feb-20 07:31:12.028 INFO  [restartedMain] c.z.h.HikariDataSource - HikariPool-1 - Starting...
+@2020-Feb-20 07:31:12.616 INFO  [restartedMain] c.z.h.HikariDataSource - HikariPool-1 - Start completed.
+@2020-Feb-20 07:31:15.190 INFO  [restartedMain] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+@2020-Feb-20 07:31:15.670 WARN  [restartedMain] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+@2020-Feb-20 07:31:15.756 INFO  [restartedMain] o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 4c10d47f-5163-4b13-af67-6f6ac5c7be27
+
+@2020-Feb-20 07:31:15.949 INFO  [restartedMain] o.s.s.w.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@57a8932c, org.springframework.security.web.context.SecurityContextPersistenceFilter@2b252f2b, org.springframework.security.web.header.HeaderWriterFilter@1b40a814, org.springframework.security.web.authentication.logout.LogoutFilter@5e83435a, org.springframework.security.oauth2.provider.authentication.OAuth2AuthenticationProcessingFilter@6773837d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6146efdc, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@48939c9b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5a0088fa, org.springframework.security.web.session.SessionManagementFilter@5c157c14, org.springframework.security.web.access.ExceptionTranslationFilter@90595aa, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@45b90d65]
+@2020-Feb-20 07:31:15.968 WARN  [restartedMain] c.n.c.s.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+@2020-Feb-20 07:31:15.968 INFO  [restartedMain] c.n.c.s.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+@2020-Feb-20 07:31:15.971 WARN  [restartedMain] c.n.c.s.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+@2020-Feb-20 07:31:15.972 INFO  [restartedMain] c.n.c.s.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+@2020-Feb-20 07:31:16.124 INFO  [restartedMain] o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+@2020-Feb-20 07:31:16.556 INFO  [restartedMain] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+@2020-Feb-20 07:31:16.958 INFO  [restartedMain] o.s.c.n.e.InstanceInfoFactory - Setting initial instance status as: STARTING
+@2020-Feb-20 07:31:17.056 INFO  [restartedMain] c.n.d.DiscoveryClient - Initializing Eureka in region us-east-1
+@2020-Feb-20 07:31:17.564 INFO  [restartedMain] c.n.d.p.DiscoveryJerseyProvider - Using JSON encoding codec LegacyJacksonJson
+@2020-Feb-20 07:31:17.564 INFO  [restartedMain] c.n.d.p.DiscoveryJerseyProvider - Using JSON decoding codec LegacyJacksonJson
+@2020-Feb-20 07:31:17.897 INFO  [restartedMain] c.n.d.p.DiscoveryJerseyProvider - Using XML encoding codec XStreamXml
+@2020-Feb-20 07:31:17.897 INFO  [restartedMain] c.n.d.p.DiscoveryJerseyProvider - Using XML decoding codec XStreamXml
+@2020-Feb-20 07:31:18.095 INFO  [restartedMain] c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+@2020-Feb-20 07:31:18.207 INFO  [restartedMain] c.n.d.DiscoveryClient - Disable delta property : false
+@2020-Feb-20 07:31:18.207 INFO  [restartedMain] c.n.d.DiscoveryClient - Single vip registry refresh property : null
+@2020-Feb-20 07:31:18.207 INFO  [restartedMain] c.n.d.DiscoveryClient - Force full registry fetch : false
+@2020-Feb-20 07:31:18.207 INFO  [restartedMain] c.n.d.DiscoveryClient - Application is null : false
+@2020-Feb-20 07:31:18.207 INFO  [restartedMain] c.n.d.DiscoveryClient - Registered Applications size is zero : true
+@2020-Feb-20 07:31:18.207 INFO  [restartedMain] c.n.d.DiscoveryClient - Application version is -1: true
+@2020-Feb-20 07:31:18.207 INFO  [restartedMain] c.n.d.DiscoveryClient - Getting all instance registry info from the eureka server
+@2020-Feb-20 07:31:18.351 INFO  [restartedMain] c.n.d.DiscoveryClient - The response status is 200
+@2020-Feb-20 07:31:18.354 INFO  [restartedMain] c.n.d.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+@2020-Feb-20 07:31:18.356 INFO  [restartedMain] c.n.d.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+@2020-Feb-20 07:31:18.360 INFO  [restartedMain] c.n.d.DiscoveryClient - Discovery Client initialized at timestamp 1582173078359 with initial instances count: 11
+@2020-Feb-20 07:31:18.364 INFO  [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry - Registering application TREPORT with eureka with status UP
+@2020-Feb-20 07:31:18.364 INFO  [restartedMain] c.n.d.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1582173078364, current=UP, previous=STARTING]
+@2020-Feb-20 07:31:18.366 INFO  [DiscoveryClient-InstanceInfoReplicator-0] c.n.d.DiscoveryClient - DiscoveryClient_TREPORT/treport:7e92ee6404145306052d053680e3cae1: registering service...
+@2020-Feb-20 07:31:18.408 INFO  [DiscoveryClient-InstanceInfoReplicator-0] c.n.d.DiscoveryClient - DiscoveryClient_TREPORT/treport:7e92ee6404145306052d053680e3cae1 - registration status: 204
+@2020-Feb-20 07:31:18.537 INFO  [restartedMain] o.s.b.w.e.t.TomcatWebServer - Tomcat started on port(s): 9085 (http) with context path ''
+@2020-Feb-20 07:31:18.540 INFO  [restartedMain] o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 9085
+@2020-Feb-20 07:31:18.672 INFO  [restartedMain] c.r.j.JasperApplication - Started JasperApplication in 9.56 seconds (JVM running for 10.381)
+@2020-Feb-20 07:36:18.211 INFO  [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+@2020-Feb-20 07:41:16.513 INFO  [http-nio-9085-exec-1] o.a.c.c.C.[.[.[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+@2020-Feb-20 07:41:16.922 INFO  [http-nio-9085-exec-2] c.r.j.c.ReportController - Request for multiCoursesReport PDF generation
+@2020-Feb-20 07:41:17.454 INFO  [http-nio-9085-exec-2] c.r.j.c.ReportController - report Formatpdf
+@2020-Feb-20 07:41:17.454 INFO  [http-nio-9085-exec-2] c.r.j.c.ReportController - report size[com.report.jasper.entities.MultiCoursesReport@21824f96, com.report.jasper.entities.MultiCoursesReport@23ea5d98, com.report.jasper.entities.MultiCoursesReport@5e382b71, com.report.jasper.entities.MultiCoursesReport@4f8cdbbf, com.report.jasper.entities.MultiCoursesReport@7646ef99, com.report.jasper.entities.MultiCoursesReport@7316a54, com.report.jasper.entities.MultiCoursesReport@18cdba60, com.report.jasper.entities.MultiCoursesReport@31b5cbe5, com.report.jasper.entities.MultiCoursesReport@704ed06d, com.report.jasper.entities.MultiCoursesReport@7c2167fa, com.report.jasper.entities.MultiCoursesReport@94adca4]
+@2020-Feb-20 07:41:18.213 INFO  [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+@2020-Feb-20 07:42:03.970 INFO  [http-nio-9085-exec-4] c.r.j.c.ReportController - filename*********MultiCoursesReport.pdf
+@2020-Feb-20 07:42:03.970 INFO  [http-nio-9085-exec-4] c.r.j.s.FileService - resource is MultiCoursesReport.pdf
+@2020-Feb-20 07:43:21.358 INFO  [http-nio-9085-exec-7] c.r.j.c.ReportController - Request for multiCoursesReport PDF generation
+@2020-Feb-20 07:43:21.358 INFO  [http-nio-9085-exec-7] c.r.j.c.ReportController - 01-Jan-20
+@2020-Feb-20 07:43:21.466 INFO  [http-nio-9085-exec-7] c.r.j.c.ReportController - 20-Feb-20
+@2020-Feb-20 07:43:21.771 INFO  [http-nio-9085-exec-7] c.r.j.c.ReportController - report Formatpdf
+@2020-Feb-20 07:43:21.771 INFO  [http-nio-9085-exec-7] c.r.j.c.ReportController - report size[com.report.jasper.entities.MultiCoursesReport@6b5a2f72]
+@2020-Feb-20 07:43:23.046 INFO  [http-nio-9085-exec-8] c.r.j.c.ReportController - filename*********MultiCoursesReport.pdf
+@2020-Feb-20 07:43:23.046 INFO  [http-nio-9085-exec-8] c.r.j.s.FileService - resource is MultiCoursesReport.pdf
+@2020-Feb-20 07:44:12.133 INFO  [http-nio-9085-exec-10] c.r.j.c.ReportController - Request for multiCoursesReport PDF generation
+@2020-Feb-20 07:44:12.133 INFO  [http-nio-9085-exec-10] c.r.j.c.ReportController - 01-Jan-20
+@2020-Feb-20 07:44:12.134 INFO  [http-nio-9085-exec-10] c.r.j.c.ReportController - 16-Nov-20
+@2020-Feb-20 07:44:12.245 INFO  [http-nio-9085-exec-10] c.r.j.c.ReportController - report Formatpdf
+@2020-Feb-20 07:44:12.245 INFO  [http-nio-9085-exec-10] c.r.j.c.ReportController - report size[com.report.jasper.entities.MultiCoursesReport@5c924f94, com.report.jasper.entities.MultiCoursesReport@5e648b3, com.report.jasper.entities.MultiCoursesReport@2486c2bc]
+@2020-Feb-20 07:44:13.312 INFO  [http-nio-9085-exec-1] c.r.j.c.ReportController - filename*********MultiCoursesReport.pdf
+@2020-Feb-20 07:44:13.312 INFO  [http-nio-9085-exec-1] c.r.j.s.FileService - resource is MultiCoursesReport.pdf
+@2020-Feb-20 07:44:54.281 INFO  [RMI TCP Connection(26)-127.0.0.1] o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+@2020-Feb-20 07:44:54.282 INFO  [RMI TCP Connection(26)-127.0.0.1] o.s.c.n.e.s.EurekaServiceRegistry - Unregistering application TREPORT with eureka with status DOWN
+@2020-Feb-20 07:44:54.282 WARN  [RMI TCP Connection(26)-127.0.0.1] c.n.d.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1582173894282, current=DOWN, previous=UP]
+@2020-Feb-20 07:44:54.282 INFO  [DiscoveryClient-InstanceInfoReplicator-0] c.n.d.DiscoveryClient - DiscoveryClient_TREPORT/treport:7e92ee6404145306052d053680e3cae1: registering service...
+@2020-Feb-20 07:44:54.289 INFO  [RMI TCP Connection(26)-127.0.0.1] o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+@2020-Feb-20 07:44:54.290 INFO  [DiscoveryClient-InstanceInfoReplicator-0] c.n.d.DiscoveryClient - DiscoveryClient_TREPORT/treport:7e92ee6404145306052d053680e3cae1 - registration status: 204
+@2020-Feb-20 07:44:54.307 INFO  [RMI TCP Connection(26)-127.0.0.1] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+@2020-Feb-20 07:44:54.327 INFO  [RMI TCP Connection(26)-127.0.0.1] c.n.d.DiscoveryClient - Shutting down DiscoveryClient ...
+@2020-Feb-20 07:44:57.328 INFO  [RMI TCP Connection(26)-127.0.0.1] c.n.d.DiscoveryClient - Unregistering ...
+@2020-Feb-20 07:44:57.339 INFO  [RMI TCP Connection(26)-127.0.0.1] c.n.d.DiscoveryClient - DiscoveryClient_TREPORT/treport:7e92ee6404145306052d053680e3cae1 - deregister  status: 200
+@2020-Feb-20 07:44:57.440 WARN  [DiscoveryClient-0] c.n.d.TimedSupervisorTask - task supervisor shutting down, can't accept the task
+@2020-Feb-20 07:44:57.459 INFO  [RMI TCP Connection(26)-127.0.0.1] c.n.d.DiscoveryClient - Completed shut down of DiscoveryClient
+@2020-Feb-20 07:44:57.460 INFO  [RMI TCP Connection(26)-127.0.0.1] c.z.h.HikariDataSource - HikariPool-1 - Shutdown initiated...
+@2020-Feb-20 07:44:57.516 INFO  [RMI TCP Connection(26)-127.0.0.1] c.z.h.HikariDataSource - HikariPool-1 - Shutdown completed.
+@2020-Feb-20 07:44:57.608 INFO  [RMI TCP Connection(26)-127.0.0.1] o.a.c.c.StandardService - Stopping service [Tomcat]
+@2020-Feb-20 07:44:57.616 INFO  [RMI TCP Connection(26)-127.0.0.1] o.a.c.c.C.[.[.[/] - Destroying Spring FrameworkServlet 'dispatcherServlet'
+@2020-Feb-20 08:05:08.612 INFO  [restartedMain] c.r.j.JasperApplication - No active profile set, falling back to default profiles: default
+@2020-Feb-20 08:05:09.176 INFO  [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+@2020-Feb-20 08:05:09.246 INFO  [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 64ms. Found 4 JPA repository interfaces.
+@2020-Feb-20 08:05:09.451 INFO  [restartedMain] o.s.c.c.s.GenericScope - BeanFactory id=7f1e4180-3561-33ef-8301-cd8cdb2d8157
+@2020-Feb-20 08:05:09.559 INFO  [restartedMain] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+@2020-Feb-20 08:05:09.584 INFO  [restartedMain] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration' of type [org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+@2020-Feb-20 08:05:09.587 INFO  [restartedMain] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'objectPostProcessor' of type [org.springframework.security.config.annotation.configuration.AutowireBeanFactoryObjectPostProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+@2020-Feb-20 08:05:09.590 INFO  [restartedMain] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@7f85bcde' of type [org.springframework.security.oauth2.provider.expression.OAuth2MethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+@2020-Feb-20 08:05:09.591 INFO  [restartedMain] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration' of type [org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+@2020-Feb-20 08:05:09.593 INFO  [restartedMain] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+@2020-Feb-20 08:05:09.604 INFO  [restartedMain] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$921e4859] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+@2020-Feb-20 08:05:10.020 INFO  [restartedMain] o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port(s): 9085 (http)
+@2020-Feb-20 08:05:10.027 INFO  [restartedMain] o.a.c.c.StandardService - Starting service [Tomcat]
+@2020-Feb-20 08:05:10.027 INFO  [restartedMain] o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.30]
+@2020-Feb-20 08:05:10.182 INFO  [restartedMain] o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext
+@2020-Feb-20 08:05:10.700 INFO  [restartedMain] c.z.h.HikariDataSource - HikariPool-1 - Starting...
+@2020-Feb-20 08:05:11.261 INFO  [restartedMain] c.z.h.HikariDataSource - HikariPool-1 - Start completed.
+@2020-Feb-20 08:05:15.453 INFO  [restartedMain] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+@2020-Feb-20 08:05:17.220 WARN  [restartedMain] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+@2020-Feb-20 08:05:18.943 INFO  [restartedMain] o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 56e48be7-b580-443c-94c6-592db9de643f
+
+@2020-Feb-20 08:05:20.156 INFO  [restartedMain] o.s.s.w.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@f3d7c88, org.springframework.security.web.context.SecurityContextPersistenceFilter@7d9e1cd7, org.springframework.security.web.header.HeaderWriterFilter@2ccce450, org.springframework.security.web.authentication.logout.LogoutFilter@4ea90bac, org.springframework.security.oauth2.provider.authentication.OAuth2AuthenticationProcessingFilter@3a673a26, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4cd2eaed, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@122e58a3, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3166f547, org.springframework.security.web.session.SessionManagementFilter@4e90e128, org.springframework.security.web.access.ExceptionTranslationFilter@32674fd3, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2afa9ae2]
+@2020-Feb-20 08:05:20.174 WARN  [restartedMain] c.n.c.s.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+@2020-Feb-20 08:05:20.174 INFO  [restartedMain] c.n.c.s.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+@2020-Feb-20 08:05:20.214 WARN  [restartedMain] c.n.c.s.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+@2020-Feb-20 08:05:20.214 INFO  [restartedMain] c.n.c.s.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+@2020-Feb-20 08:05:21.057 INFO  [restartedMain] o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+@2020-Feb-20 08:05:21.703 INFO  [restartedMain] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+@2020-Feb-20 08:05:22.267 INFO  [restartedMain] o.s.c.n.e.InstanceInfoFactory - Setting initial instance status as: STARTING
+@2020-Feb-20 08:05:22.386 INFO  [restartedMain] c.n.d.DiscoveryClient - Initializing Eureka in region us-east-1
+@2020-Feb-20 08:05:24.511 INFO  [restartedMain] c.n.d.p.DiscoveryJerseyProvider - Using JSON encoding codec LegacyJacksonJson
+@2020-Feb-20 08:05:24.512 INFO  [restartedMain] c.n.d.p.DiscoveryJerseyProvider - Using JSON decoding codec LegacyJacksonJson
+@2020-Feb-20 08:05:24.872 INFO  [restartedMain] c.n.d.p.DiscoveryJerseyProvider - Using XML encoding codec XStreamXml
+@2020-Feb-20 08:05:24.873 INFO  [restartedMain] c.n.d.p.DiscoveryJerseyProvider - Using XML decoding codec XStreamXml
+@2020-Feb-20 08:05:25.279 INFO  [restartedMain] c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+@2020-Feb-20 08:05:25.458 INFO  [restartedMain] c.n.d.DiscoveryClient - Disable delta property : false
+@2020-Feb-20 08:05:25.458 INFO  [restartedMain] c.n.d.DiscoveryClient - Single vip registry refresh property : null
+@2020-Feb-20 08:05:25.458 INFO  [restartedMain] c.n.d.DiscoveryClient - Force full registry fetch : false
+@2020-Feb-20 08:05:25.458 INFO  [restartedMain] c.n.d.DiscoveryClient - Application is null : false
+@2020-Feb-20 08:05:25.458 INFO  [restartedMain] c.n.d.DiscoveryClient - Registered Applications size is zero : true
+@2020-Feb-20 08:05:25.458 INFO  [restartedMain] c.n.d.DiscoveryClient - Application version is -1: true
+@2020-Feb-20 08:05:25.458 INFO  [restartedMain] c.n.d.DiscoveryClient - Getting all instance registry info from the eureka server
+@2020-Feb-20 08:05:25.798 INFO  [restartedMain] c.n.d.DiscoveryClient - The response status is 200
+@2020-Feb-20 08:05:25.813 INFO  [restartedMain] c.n.d.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+@2020-Feb-20 08:05:25.815 INFO  [restartedMain] c.n.d.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+@2020-Feb-20 08:05:25.819 INFO  [restartedMain] c.n.d.DiscoveryClient - Discovery Client initialized at timestamp 1582175125818 with initial instances count: 11
+@2020-Feb-20 08:05:25.822 INFO  [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry - Registering application TREPORT with eureka with status UP
+@2020-Feb-20 08:05:25.823 INFO  [restartedMain] c.n.d.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1582175125823, current=UP, previous=STARTING]
+@2020-Feb-20 08:05:25.825 INFO  [DiscoveryClient-InstanceInfoReplicator-0] c.n.d.DiscoveryClient - DiscoveryClient_TREPORT/treport:0ef69a24f0680497c801c9e2b76dfaae: registering service...
+@2020-Feb-20 08:05:25.889 INFO  [DiscoveryClient-InstanceInfoReplicator-0] c.n.d.DiscoveryClient - DiscoveryClient_TREPORT/treport:0ef69a24f0680497c801c9e2b76dfaae - registration status: 204
+@2020-Feb-20 08:05:26.088 INFO  [restartedMain] o.s.b.w.e.t.TomcatWebServer - Tomcat started on port(s): 9085 (http) with context path ''
+@2020-Feb-20 08:05:26.090 INFO  [restartedMain] o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 9085
+@2020-Feb-20 08:05:26.231 INFO  [restartedMain] c.r.j.JasperApplication - Started JasperApplication in 18.507 seconds (JVM running for 19.449)
+@2020-Feb-20 08:05:50.369 INFO  [http-nio-9085-exec-1] o.a.c.c.C.[.[.[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+@2020-Feb-20 08:05:50.653 INFO  [http-nio-9085-exec-1] c.r.j.c.ReportController - Request for multiCoursesReport PDF generation
+@2020-Feb-20 08:05:50.654 INFO  [http-nio-9085-exec-1] c.r.j.c.ReportController - 01-Jan-20
+@2020-Feb-20 08:05:50.679 INFO  [http-nio-9085-exec-1] c.r.j.c.ReportController - 16-Nov-20
+@2020-Feb-20 08:05:51.074 INFO  [http-nio-9085-exec-1] c.r.j.c.ReportController - report Formatpdf
+@2020-Feb-20 08:05:51.075 INFO  [http-nio-9085-exec-1] c.r.j.c.ReportController - report size[com.report.jasper.entities.MultiCoursesReport@349d0119, com.report.jasper.entities.MultiCoursesReport@54504466, com.report.jasper.entities.MultiCoursesReport@5247b293]
+@2020-Feb-20 08:06:12.457 INFO  [http-nio-9085-exec-2] c.r.j.c.ReportController - filename*********MultiCoursesReport.pdf
+@2020-Feb-20 08:06:12.458 INFO  [http-nio-9085-exec-2] c.r.j.s.FileService - resource is MultiCoursesReport.pdf
+@2020-Feb-20 08:07:06.279 INFO  [http-nio-9085-exec-4] c.r.j.c.ReportController - Request for multiCoursesReport PDF generation
+@2020-Feb-20 08:07:06.549 INFO  [http-nio-9085-exec-4] c.r.j.c.ReportController - report Formatpdf
+@2020-Feb-20 08:07:06.550 INFO  [http-nio-9085-exec-4] c.r.j.c.ReportController - report size[com.report.jasper.entities.MultiCoursesReport@434b721a, com.report.jasper.entities.MultiCoursesReport@469b9365, com.report.jasper.entities.MultiCoursesReport@174cdc96, com.report.jasper.entities.MultiCoursesReport@408c6839, com.report.jasper.entities.MultiCoursesReport@584f1990, com.report.jasper.entities.MultiCoursesReport@42d5a947, com.report.jasper.entities.MultiCoursesReport@338c75e7, com.report.jasper.entities.MultiCoursesReport@10621e0f, com.report.jasper.entities.MultiCoursesReport@30c1060a, com.report.jasper.entities.MultiCoursesReport@5f310ec4, com.report.jasper.entities.MultiCoursesReport@fd09e09]
+@2020-Feb-20 08:07:08.034 INFO  [http-nio-9085-exec-5] c.r.j.c.ReportController - filename*********MultiCoursesReport.pdf
+@2020-Feb-20 08:07:08.035 INFO  [http-nio-9085-exec-5] c.r.j.s.FileService - resource is MultiCoursesReport.pdf
+@2020-Feb-20 08:07:45.187 INFO  [http-nio-9085-exec-6] c.r.j.c.ReportController - Request for multiCoursesReport PDF generation
+@2020-Feb-20 08:07:45.304 INFO  [http-nio-9085-exec-6] c.r.j.c.ReportController - report Formatpdf
+@2020-Feb-20 08:07:45.304 INFO  [http-nio-9085-exec-6] c.r.j.c.ReportController - report size[com.report.jasper.entities.MultiCoursesReport@49860bde]
+@2020-Feb-20 08:07:46.914 INFO  [http-nio-9085-exec-7] c.r.j.c.ReportController - filename*********MultiCoursesReport.pdf
+@2020-Feb-20 08:07:46.914 INFO  [http-nio-9085-exec-7] c.r.j.s.FileService - resource is MultiCoursesReport.pdf
+@2020-Feb-20 08:10:25.448 INFO  [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+@2020-Feb-20 08:15:11.955 INFO  [RMI TCP Connection(21)-127.0.0.1] o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+@2020-Feb-20 08:15:11.956 INFO  [RMI TCP Connection(21)-127.0.0.1] o.s.c.n.e.s.EurekaServiceRegistry - Unregistering application TREPORT with eureka with status DOWN
+@2020-Feb-20 08:15:11.956 WARN  [RMI TCP Connection(21)-127.0.0.1] c.n.d.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1582175711956, current=DOWN, previous=UP]
+@2020-Feb-20 08:15:11.956 INFO  [DiscoveryClient-InstanceInfoReplicator-0] c.n.d.DiscoveryClient - DiscoveryClient_TREPORT/treport:0ef69a24f0680497c801c9e2b76dfaae: registering service...
+@2020-Feb-20 08:15:11.961 INFO  [RMI TCP Connection(21)-127.0.0.1] o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+@2020-Feb-20 08:15:11.964 INFO  [DiscoveryClient-InstanceInfoReplicator-0] c.n.d.DiscoveryClient - DiscoveryClient_TREPORT/treport:0ef69a24f0680497c801c9e2b76dfaae - registration status: 204
+@2020-Feb-20 08:15:12.025 INFO  [RMI TCP Connection(21)-127.0.0.1] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+@2020-Feb-20 08:15:12.036 INFO  [RMI TCP Connection(21)-127.0.0.1] c.n.d.DiscoveryClient - Shutting down DiscoveryClient ...
+@2020-Feb-20 08:15:15.037 INFO  [RMI TCP Connection(21)-127.0.0.1] c.n.d.DiscoveryClient - Unregistering ...
+@2020-Feb-20 08:15:15.038 WARN  [DiscoveryClient-1] c.n.d.TimedSupervisorTask - task supervisor shutting down, can't accept the task
+@2020-Feb-20 08:15:15.051 INFO  [RMI TCP Connection(21)-127.0.0.1] c.n.d.DiscoveryClient - DiscoveryClient_TREPORT/treport:0ef69a24f0680497c801c9e2b76dfaae - deregister  status: 200
+@2020-Feb-20 08:15:15.070 INFO  [RMI TCP Connection(21)-127.0.0.1] c.n.d.DiscoveryClient - Completed shut down of DiscoveryClient
+@2020-Feb-20 08:15:15.070 INFO  [RMI TCP Connection(21)-127.0.0.1] c.z.h.HikariDataSource - HikariPool-1 - Shutdown initiated...
+@2020-Feb-20 08:15:15.218 INFO  [RMI TCP Connection(21)-127.0.0.1] c.z.h.HikariDataSource - HikariPool-1 - Shutdown completed.
+@2020-Feb-20 08:15:15.335 INFO  [RMI TCP Connection(21)-127.0.0.1] o.a.c.c.StandardService - Stopping service [Tomcat]
+@2020-Feb-20 08:15:15.336 INFO  [RMI TCP Connection(21)-127.0.0.1] o.a.c.c.C.[.[.[/] - Destroying Spring FrameworkServlet 'dispatcherServlet'
+@2020-Feb-20 08:16:06.764 INFO  [restartedMain] c.r.j.JasperApplication - No active profile set, falling back to default profiles: default
+@2020-Feb-20 08:16:07.328 INFO  [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+@2020-Feb-20 08:16:07.398 INFO  [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 65ms. Found 4 JPA repository interfaces.
+@2020-Feb-20 08:16:07.599 INFO  [restartedMain] o.s.c.c.s.GenericScope - BeanFactory id=7f1e4180-3561-33ef-8301-cd8cdb2d8157
+@2020-Feb-20 08:16:07.703 INFO  [restartedMain] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+@2020-Feb-20 08:16:07.727 INFO  [restartedMain] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration' of type [org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+@2020-Feb-20 08:16:07.730 INFO  [restartedMain] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'objectPostProcessor' of type [org.springframework.security.config.annotation.configuration.AutowireBeanFactoryObjectPostProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+@2020-Feb-20 08:16:07.733 INFO  [restartedMain] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@2b259b3' of type [org.springframework.security.oauth2.provider.expression.OAuth2MethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+@2020-Feb-20 08:16:07.734 INFO  [restartedMain] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration' of type [org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+@2020-Feb-20 08:16:07.736 INFO  [restartedMain] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+@2020-Feb-20 08:16:07.746 INFO  [restartedMain] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$9f7aacfa] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+@2020-Feb-20 08:16:08.132 INFO  [restartedMain] o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port(s): 9085 (http)
+@2020-Feb-20 08:16:08.140 INFO  [restartedMain] o.a.c.c.StandardService - Starting service [Tomcat]
+@2020-Feb-20 08:16:08.140 INFO  [restartedMain] o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.30]
+@2020-Feb-20 08:16:08.292 INFO  [restartedMain] o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext
+@2020-Feb-20 08:16:08.765 INFO  [restartedMain] c.z.h.HikariDataSource - HikariPool-1 - Starting...
+@2020-Feb-20 08:16:10.080 INFO  [restartedMain] c.z.h.HikariDataSource - HikariPool-1 - Start completed.
+@2020-Feb-20 08:16:12.488 INFO  [restartedMain] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+@2020-Feb-20 08:16:12.937 WARN  [restartedMain] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+@2020-Feb-20 08:16:13.042 INFO  [restartedMain] o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 84bf2d9b-e3ad-4896-bfac-4aec6636f680
+
+@2020-Feb-20 08:16:13.198 INFO  [restartedMain] o.s.s.w.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@545483b9, org.springframework.security.web.context.SecurityContextPersistenceFilter@26ff6c66, org.springframework.security.web.header.HeaderWriterFilter@21ace556, org.springframework.security.web.authentication.logout.LogoutFilter@25649859, org.springframework.security.oauth2.provider.authentication.OAuth2AuthenticationProcessingFilter@27a9ebea, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@53a4b8d4, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@dd0c06a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5b06b472, org.springframework.security.web.session.SessionManagementFilter@58a29578, org.springframework.security.web.access.ExceptionTranslationFilter@bd9090d, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@457c67e1]
+@2020-Feb-20 08:16:13.216 WARN  [restartedMain] c.n.c.s.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+@2020-Feb-20 08:16:13.216 INFO  [restartedMain] c.n.c.s.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+@2020-Feb-20 08:16:13.220 WARN  [restartedMain] c.n.c.s.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+@2020-Feb-20 08:16:13.220 INFO  [restartedMain] c.n.c.s.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+@2020-Feb-20 08:16:13.419 INFO  [restartedMain] o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+@2020-Feb-20 08:16:13.843 INFO  [restartedMain] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+@2020-Feb-20 08:16:14.243 INFO  [restartedMain] o.s.c.n.e.InstanceInfoFactory - Setting initial instance status as: STARTING
+@2020-Feb-20 08:16:14.274 INFO  [restartedMain] c.n.d.DiscoveryClient - Initializing Eureka in region us-east-1
+@2020-Feb-20 08:16:14.480 INFO  [restartedMain] c.n.d.p.DiscoveryJerseyProvider - Using JSON encoding codec LegacyJacksonJson
+@2020-Feb-20 08:16:14.481 INFO  [restartedMain] c.n.d.p.DiscoveryJerseyProvider - Using JSON decoding codec LegacyJacksonJson
+@2020-Feb-20 08:16:14.579 INFO  [restartedMain] c.n.d.p.DiscoveryJerseyProvider - Using XML encoding codec XStreamXml
+@2020-Feb-20 08:16:14.579 INFO  [restartedMain] c.n.d.p.DiscoveryJerseyProvider - Using XML decoding codec XStreamXml
+@2020-Feb-20 08:16:14.729 INFO  [restartedMain] c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+@2020-Feb-20 08:16:14.844 INFO  [restartedMain] c.n.d.DiscoveryClient - Disable delta property : false
+@2020-Feb-20 08:16:14.844 INFO  [restartedMain] c.n.d.DiscoveryClient - Single vip registry refresh property : null
+@2020-Feb-20 08:16:14.844 INFO  [restartedMain] c.n.d.DiscoveryClient - Force full registry fetch : false
+@2020-Feb-20 08:16:14.844 INFO  [restartedMain] c.n.d.DiscoveryClient - Application is null : false
+@2020-Feb-20 08:16:14.844 INFO  [restartedMain] c.n.d.DiscoveryClient - Registered Applications size is zero : true
+@2020-Feb-20 08:16:14.844 INFO  [restartedMain] c.n.d.DiscoveryClient - Application version is -1: true
+@2020-Feb-20 08:16:14.844 INFO  [restartedMain] c.n.d.DiscoveryClient - Getting all instance registry info from the eureka server
+@2020-Feb-20 08:16:15.048 INFO  [restartedMain] c.n.d.DiscoveryClient - The response status is 200
+@2020-Feb-20 08:16:15.051 INFO  [restartedMain] c.n.d.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+@2020-Feb-20 08:16:15.053 INFO  [restartedMain] c.n.d.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+@2020-Feb-20 08:16:15.057 INFO  [restartedMain] c.n.d.DiscoveryClient - Discovery Client initialized at timestamp 1582175775056 with initial instances count: 11
+@2020-Feb-20 08:16:15.061 INFO  [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry - Registering application TREPORT with eureka with status UP
+@2020-Feb-20 08:16:15.061 INFO  [restartedMain] c.n.d.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1582175775061, current=UP, previous=STARTING]
+@2020-Feb-20 08:16:15.063 INFO  [DiscoveryClient-InstanceInfoReplicator-0] c.n.d.DiscoveryClient - DiscoveryClient_TREPORT/treport:c202ea2c071701fbdb22cc8fe91df7cc: registering service...
+@2020-Feb-20 08:16:15.100 INFO  [restartedMain] o.s.b.w.e.t.TomcatWebServer - Tomcat started on port(s): 9085 (http) with context path ''
+@2020-Feb-20 08:16:15.101 INFO  [restartedMain] o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 9085
+@2020-Feb-20 08:16:15.103 INFO  [DiscoveryClient-InstanceInfoReplicator-0] c.n.d.DiscoveryClient - DiscoveryClient_TREPORT/treport:c202ea2c071701fbdb22cc8fe91df7cc - registration status: 204
+@2020-Feb-20 08:16:15.214 INFO  [restartedMain] c.r.j.JasperApplication - Started JasperApplication in 9.459 seconds (JVM running for 10.252)
+@2020-Feb-20 08:21:14.823 INFO  [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+@2020-Feb-20 08:23:39.789 INFO  [http-nio-9085-exec-1] o.a.c.c.C.[.[.[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+@2020-Feb-20 08:23:39.914 INFO  [http-nio-9085-exec-2] c.r.j.c.ReportController - from dateWed Jan 01 00:00:00 AST 2020
+@2020-Feb-20 08:23:39.914 INFO  [http-nio-9085-exec-2] c.r.j.c.ReportController - to datenull
+@2020-Feb-20 08:23:39.914 INFO  [http-nio-9085-exec-2] c.r.j.c.ReportController - to datenull
+@2020-Feb-20 08:23:39.915 INFO  [http-nio-9085-exec-2] c.r.j.c.ReportController - 01-Jan-20
+@2020-Feb-20 08:23:39.916 INFO  [http-nio-9085-exec-2] c.r.j.c.ReportController - 20-Feb-20
+@2020-Feb-20 08:23:40.131 INFO  [http-nio-9085-exec-2] c.r.j.c.ReportController - report Formatpdf
+@2020-Feb-20 08:23:40.131 INFO  [http-nio-9085-exec-2] c.r.j.c.ReportController - report size[com.report.jasper.entities.CourseReport@49aeff7a]
+@2020-Feb-20 08:23:47.442 INFO  [http-nio-9085-exec-3] c.r.j.c.ReportController - from datenull
+@2020-Feb-20 08:23:47.442 INFO  [http-nio-9085-exec-3] c.r.j.c.ReportController - to datenull
+@2020-Feb-20 08:23:47.442 INFO  [http-nio-9085-exec-3] c.r.j.c.ReportController - to datenull
+@2020-Feb-20 08:23:47.442 INFO  [http-nio-9085-exec-3] c.r.j.c.ReportController - 20-Feb-20
+@2020-Feb-20 08:23:47.481 INFO  [http-nio-9085-exec-3] c.r.j.c.ReportController - report Formatpdf
+@2020-Feb-20 08:23:47.482 INFO  [http-nio-9085-exec-3] c.r.j.c.ReportController - report size[]
+@2020-Feb-20 08:23:50.518 INFO  [http-nio-9085-exec-4] c.r.j.c.ReportController - from datenull
+@2020-Feb-20 08:23:50.518 INFO  [http-nio-9085-exec-4] c.r.j.c.ReportController - to datenull
+@2020-Feb-20 08:23:50.518 INFO  [http-nio-9085-exec-4] c.r.j.c.ReportController - to datenull
+@2020-Feb-20 08:23:50.518 INFO  [http-nio-9085-exec-4] c.r.j.c.ReportController - 20-Feb-20
+@2020-Feb-20 08:23:50.581 INFO  [http-nio-9085-exec-4] c.r.j.c.ReportController - report Formatpdf
+@2020-Feb-20 08:23:50.582 INFO  [http-nio-9085-exec-4] c.r.j.c.ReportController - report size[]
+@2020-Feb-20 08:26:14.814 INFO  [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+@2020-Feb-20 08:31:14.811 INFO  [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+@2020-Feb-20 08:36:14.776 INFO  [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+@2020-Feb-20 08:41:02.509 INFO  [RMI TCP Connection(34)-127.0.0.1] o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+@2020-Feb-20 08:41:02.510 INFO  [RMI TCP Connection(34)-127.0.0.1] o.s.c.n.e.s.EurekaServiceRegistry - Unregistering application TREPORT with eureka with status DOWN
+@2020-Feb-20 08:41:02.510 WARN  [RMI TCP Connection(34)-127.0.0.1] c.n.d.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1582177262510, current=DOWN, previous=UP]
+@2020-Feb-20 08:41:02.511 INFO  [DiscoveryClient-InstanceInfoReplicator-0] c.n.d.DiscoveryClient - DiscoveryClient_TREPORT/treport:c202ea2c071701fbdb22cc8fe91df7cc: registering service...
+@2020-Feb-20 08:41:02.515 INFO  [RMI TCP Connection(34)-127.0.0.1] o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+@2020-Feb-20 08:41:02.518 INFO  [DiscoveryClient-InstanceInfoReplicator-0] c.n.d.DiscoveryClient - DiscoveryClient_TREPORT/treport:c202ea2c071701fbdb22cc8fe91df7cc - registration status: 204
+@2020-Feb-20 08:41:02.519 INFO  [RMI TCP Connection(34)-127.0.0.1] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+@2020-Feb-20 08:41:02.523 INFO  [RMI TCP Connection(34)-127.0.0.1] c.n.d.DiscoveryClient - Shutting down DiscoveryClient ...
+@2020-Feb-20 08:41:05.525 INFO  [RMI TCP Connection(34)-127.0.0.1] c.n.d.DiscoveryClient - Unregistering ...
+@2020-Feb-20 08:41:05.526 WARN  [DiscoveryClient-0] c.n.d.TimedSupervisorTask - task supervisor shutting down, can't accept the task
+@2020-Feb-20 08:41:05.537 INFO  [RMI TCP Connection(34)-127.0.0.1] c.n.d.DiscoveryClient - DiscoveryClient_TREPORT/treport:c202ea2c071701fbdb22cc8fe91df7cc - deregister  status: 200
+@2020-Feb-20 08:41:05.564 INFO  [RMI TCP Connection(34)-127.0.0.1] c.n.d.DiscoveryClient - Completed shut down of DiscoveryClient
+@2020-Feb-20 08:41:05.565 INFO  [RMI TCP Connection(34)-127.0.0.1] c.z.h.HikariDataSource - HikariPool-1 - Shutdown initiated...
+@2020-Feb-20 08:41:05.736 INFO  [RMI TCP Connection(34)-127.0.0.1] c.z.h.HikariDataSource - HikariPool-1 - Shutdown completed.
+@2020-Feb-20 08:41:05.840 INFO  [RMI TCP Connection(34)-127.0.0.1] o.a.c.c.StandardService - Stopping service [Tomcat]
+@2020-Feb-20 08:41:05.842 INFO  [RMI TCP Connection(34)-127.0.0.1] o.a.c.c.C.[.[.[/] - Destroying Spring FrameworkServlet 'dispatcherServlet'
+@2020-Feb-20 11:53:37.832 INFO  [restartedMain] c.r.j.JasperApplication - No active profile set, falling back to default profiles: default
+@2020-Feb-20 11:53:38.415 INFO  [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+@2020-Feb-20 11:53:38.483 INFO  [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 62ms. Found 4 JPA repository interfaces.
+@2020-Feb-20 11:53:38.683 INFO  [restartedMain] o.s.c.c.s.GenericScope - BeanFactory id=7f1e4180-3561-33ef-8301-cd8cdb2d8157
+@2020-Feb-20 11:53:38.785 INFO  [restartedMain] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+@2020-Feb-20 11:53:38.813 INFO  [restartedMain] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration' of type [org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+@2020-Feb-20 11:53:38.817 INFO  [restartedMain] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'objectPostProcessor' of type [org.springframework.security.config.annotation.configuration.AutowireBeanFactoryObjectPostProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+@2020-Feb-20 11:53:38.820 INFO  [restartedMain] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@64b25613' of type [org.springframework.security.oauth2.provider.expression.OAuth2MethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+@2020-Feb-20 11:53:38.821 INFO  [restartedMain] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration' of type [org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+@2020-Feb-20 11:53:38.823 INFO  [restartedMain] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+@2020-Feb-20 11:53:38.834 INFO  [restartedMain] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$92d9be1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+@2020-Feb-20 11:53:39.421 INFO  [restartedMain] o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port(s): 9085 (http)
+@2020-Feb-20 11:53:39.427 INFO  [restartedMain] o.a.c.c.StandardService - Starting service [Tomcat]
+@2020-Feb-20 11:53:39.428 INFO  [restartedMain] o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.30]
+@2020-Feb-20 11:53:39.581 INFO  [restartedMain] o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext
+@2020-Feb-20 11:53:40.508 INFO  [restartedMain] c.z.h.HikariDataSource - HikariPool-1 - Starting...
+@2020-Feb-20 11:53:41.874 INFO  [restartedMain] c.z.h.HikariDataSource - HikariPool-1 - Start completed.
+@2020-Feb-20 11:53:44.681 INFO  [restartedMain] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+@2020-Feb-20 11:53:45.601 WARN  [restartedMain] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+@2020-Feb-20 11:53:45.800 INFO  [restartedMain] o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 068c5999-9885-408f-842e-89ac5a2fe857
+
+@2020-Feb-20 11:53:46.265 INFO  [restartedMain] o.s.s.w.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2c2064a4, org.springframework.security.web.context.SecurityContextPersistenceFilter@743b1c5e, org.springframework.security.web.header.HeaderWriterFilter@63a38bd8, org.springframework.security.web.authentication.logout.LogoutFilter@29ebdc1d, org.springframework.security.oauth2.provider.authentication.OAuth2AuthenticationProcessingFilter@26fd41a1, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6553bcd9, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@27261e22, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5079af19, org.springframework.security.web.session.SessionManagementFilter@251953f4, org.springframework.security.web.access.ExceptionTranslationFilter@359909b6, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@71b604aa]
+@2020-Feb-20 11:53:46.288 WARN  [restartedMain] c.n.c.s.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+@2020-Feb-20 11:53:46.288 INFO  [restartedMain] c.n.c.s.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+@2020-Feb-20 11:53:46.300 WARN  [restartedMain] c.n.c.s.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+@2020-Feb-20 11:53:46.300 INFO  [restartedMain] c.n.c.s.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+@2020-Feb-20 11:53:46.798 INFO  [restartedMain] o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+@2020-Feb-20 11:53:48.160 INFO  [restartedMain] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+@2020-Feb-20 11:53:48.784 INFO  [restartedMain] o.s.c.n.e.InstanceInfoFactory - Setting initial instance status as: STARTING
+@2020-Feb-20 11:53:48.894 INFO  [restartedMain] c.n.d.DiscoveryClient - Initializing Eureka in region us-east-1
+@2020-Feb-20 11:53:49.811 INFO  [restartedMain] c.n.d.p.DiscoveryJerseyProvider - Using JSON encoding codec LegacyJacksonJson
+@2020-Feb-20 11:53:49.811 INFO  [restartedMain] c.n.d.p.DiscoveryJerseyProvider - Using JSON decoding codec LegacyJacksonJson
+@2020-Feb-20 11:53:50.225 INFO  [restartedMain] c.n.d.p.DiscoveryJerseyProvider - Using XML encoding codec XStreamXml
+@2020-Feb-20 11:53:50.226 INFO  [restartedMain] c.n.d.p.DiscoveryJerseyProvider - Using XML decoding codec XStreamXml
+@2020-Feb-20 11:53:50.591 INFO  [restartedMain] c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+@2020-Feb-20 11:53:50.734 INFO  [restartedMain] c.n.d.DiscoveryClient - Disable delta property : false
+@2020-Feb-20 11:53:50.735 INFO  [restartedMain] c.n.d.DiscoveryClient - Single vip registry refresh property : null
+@2020-Feb-20 11:53:50.735 INFO  [restartedMain] c.n.d.DiscoveryClient - Force full registry fetch : false
+@2020-Feb-20 11:53:50.735 INFO  [restartedMain] c.n.d.DiscoveryClient - Application is null : false
+@2020-Feb-20 11:53:50.735 INFO  [restartedMain] c.n.d.DiscoveryClient - Registered Applications size is zero : true
+@2020-Feb-20 11:53:50.735 INFO  [restartedMain] c.n.d.DiscoveryClient - Application version is -1: true
+@2020-Feb-20 11:53:50.735 INFO  [restartedMain] c.n.d.DiscoveryClient - Getting all instance registry info from the eureka server
+@2020-Feb-20 11:53:51.053 INFO  [restartedMain] c.n.d.DiscoveryClient - The response status is 200
+@2020-Feb-20 11:53:51.056 INFO  [restartedMain] c.n.d.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+@2020-Feb-20 11:53:51.059 INFO  [restartedMain] c.n.d.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+@2020-Feb-20 11:53:51.062 INFO  [restartedMain] c.n.d.DiscoveryClient - Discovery Client initialized at timestamp 1582188831061 with initial instances count: 11
+@2020-Feb-20 11:53:51.066 INFO  [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry - Registering application TREPORT with eureka with status UP
+@2020-Feb-20 11:53:51.066 INFO  [restartedMain] c.n.d.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1582188831066, current=UP, previous=STARTING]
+@2020-Feb-20 11:53:51.068 INFO  [DiscoveryClient-InstanceInfoReplicator-0] c.n.d.DiscoveryClient - DiscoveryClient_TREPORT/treport:bf471646b740ee2ac0801d9a10f4b7c5: registering service...
+@2020-Feb-20 11:53:51.119 INFO  [DiscoveryClient-InstanceInfoReplicator-0] c.n.d.DiscoveryClient - DiscoveryClient_TREPORT/treport:bf471646b740ee2ac0801d9a10f4b7c5 - registration status: 204
+@2020-Feb-20 11:53:51.288 INFO  [restartedMain] o.s.b.w.e.t.TomcatWebServer - Tomcat started on port(s): 9085 (http) with context path ''
+@2020-Feb-20 11:53:51.289 INFO  [restartedMain] o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 9085
+@2020-Feb-20 11:53:51.419 INFO  [restartedMain] c.r.j.JasperApplication - Started JasperApplication in 14.509 seconds (JVM running for 15.475)
+@2020-Feb-20 11:54:05.763 INFO  [http-nio-9085-exec-1] o.a.c.c.C.[.[.[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+@2020-Feb-20 11:54:06.055 INFO  [http-nio-9085-exec-1] c.r.j.c.ReportController - Request for PDF generationnull
+@2020-Feb-20 11:54:06.279 INFO  [http-nio-9085-exec-1] c.r.j.c.ReportController - report Formatpdf
+@2020-Feb-20 11:54:06.279 INFO  [http-nio-9085-exec-1] c.r.j.c.ReportController - report size[com.report.jasper.entities.InstructorSubjectReport@435b6a6f, com.report.jasper.entities.InstructorSubjectReport@32121cfa, com.report.jasper.entities.InstructorSubjectReport@48578656, com.report.jasper.entities.InstructorSubjectReport@701876da, com.report.jasper.entities.InstructorSubjectReport@500a3610, com.report.jasper.entities.InstructorSubjectReport@72dd0527, com.report.jasper.entities.InstructorSubjectReport@64c581c, com.report.jasper.entities.InstructorSubjectReport@355140a9, com.report.jasper.entities.InstructorSubjectReport@34ea4aa5, com.report.jasper.entities.InstructorSubjectReport@2e848522, com.report.jasper.entities.InstructorSubjectReport@4aeca456, com.report.jasper.entities.InstructorSubjectReport@7507f1aa, com.report.jasper.entities.InstructorSubjectReport@13de32cd, com.report.jasper.entities.InstructorSubjectReport@19f91801, com.report.jasper.entities.InstructorSubjectReport@7c58ecb4, com.report.jasper.entities.InstructorSubjectReport@4f9adb77, com.report.jasper.entities.InstructorSubjectReport@3f79e0d9, com.report.jasper.entities.InstructorSubjectReport@47f86ce]
+@2020-Feb-20 11:54:26.208 INFO  [http-nio-9085-exec-4] c.r.j.c.ReportController - filename*********InstructorSubjectReport.pdf
+@2020-Feb-20 11:54:26.209 INFO  [http-nio-9085-exec-4] c.r.j.s.FileService - resource is InstructorSubjectReport.pdf
+@2020-Feb-20 11:55:42.766 INFO  [http-nio-9085-exec-7] c.r.j.c.ReportController - Request for PDF generationnull
+@2020-Feb-20 11:55:42.788 INFO  [http-nio-9085-exec-7] c.r.j.c.ReportController - report Formatpdf
+@2020-Feb-20 11:55:42.789 INFO  [http-nio-9085-exec-7] c.r.j.c.ReportController - report size[com.report.jasper.entities.InstructorSubjectReport@6cded566, com.report.jasper.entities.InstructorSubjectReport@219c0dd6, com.report.jasper.entities.InstructorSubjectReport@5c6289ce, com.report.jasper.entities.InstructorSubjectReport@8e8d245, com.report.jasper.entities.InstructorSubjectReport@120753db]
+@2020-Feb-20 11:55:43.923 INFO  [http-nio-9085-exec-8] c.r.j.c.ReportController - filename*********InstructorSubjectReport.pdf
+@2020-Feb-20 11:55:43.923 INFO  [http-nio-9085-exec-8] c.r.j.s.FileService - resource is InstructorSubjectReport.pdf
+@2020-Feb-20 11:58:50.735 INFO  [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+@2020-Feb-20 12:03:50.734 INFO  [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+@2020-Feb-20 12:08:50.733 INFO  [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+@2020-Feb-20 12:13:50.734 INFO  [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+@2020-Feb-20 12:18:50.734 INFO  [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+@2020-Feb-20 12:23:50.734 INFO  [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+@2020-Feb-20 12:28:50.735 INFO  [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+@2020-Feb-20 12:33:50.700 INFO  [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+@2020-Feb-20 12:38:50.661 INFO  [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+@2020-Feb-20 12:43:50.633 INFO  [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+@2020-Feb-20 12:48:50.614 INFO  [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+@2020-Feb-20 12:50:23.311 INFO  [http-nio-9085-exec-2] c.r.j.c.ReportController - Request for PDF generation 
+@2020-Feb-20 12:50:23.345 INFO  [http-nio-9085-exec-2] c.r.j.c.ReportController - report Formatxls
+@2020-Feb-20 12:50:23.345 INFO  [http-nio-9085-exec-2] c.r.j.c.ReportController - report size[com.report.jasper.entities.InstructorSubjectReport@3c0f8d8a, com.report.jasper.entities.InstructorSubjectReport@649fdd2b, com.report.jasper.entities.InstructorSubjectReport@d79d106, com.report.jasper.entities.InstructorSubjectReport@1c03df12, com.report.jasper.entities.InstructorSubjectReport@5c2072c5]
+@2020-Feb-20 12:50:24.644 INFO  [http-nio-9085-exec-3] c.r.j.c.ReportController - filename*********InstructorSubjectReport.xlsx
+@2020-Feb-20 12:50:24.644 INFO  [http-nio-9085-exec-3] c.r.j.s.FileService - resource is InstructorSubjectReport.xlsx
+@2020-Feb-20 12:53:50.600 INFO  [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+@2020-Feb-20 12:58:50.591 INFO  [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+@2020-Feb-20 13:03:50.584 INFO  [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+@2020-Feb-20 13:08:50.580 INFO  [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+@2020-Feb-20 13:13:50.577 INFO  [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+@2020-Feb-20 13:18:50.576 INFO  [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+@2020-Feb-20 13:23:50.576 INFO  [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+@2020-Feb-20 13:28:50.575 INFO  [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+@2020-Feb-20 13:33:08.137 INFO  [RMI TCP Connection(124)-127.0.0.1] o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+@2020-Feb-20 13:33:08.163 INFO  [RMI TCP Connection(124)-127.0.0.1] o.s.c.n.e.s.EurekaServiceRegistry - Unregistering application TREPORT with eureka with status DOWN
+@2020-Feb-20 13:33:08.164 WARN  [RMI TCP Connection(124)-127.0.0.1] c.n.d.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1582194788164, current=DOWN, previous=UP]
+@2020-Feb-20 13:33:08.165 INFO  [DiscoveryClient-InstanceInfoReplicator-0] c.n.d.DiscoveryClient - DiscoveryClient_TREPORT/treport:bf471646b740ee2ac0801d9a10f4b7c5: registering service...
+@2020-Feb-20 13:33:08.178 INFO  [DiscoveryClient-InstanceInfoReplicator-0] c.n.d.DiscoveryClient - DiscoveryClient_TREPORT/treport:bf471646b740ee2ac0801d9a10f4b7c5 - registration status: 204
+@2020-Feb-20 13:33:08.190 INFO  [RMI TCP Connection(124)-127.0.0.1] o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+@2020-Feb-20 13:33:08.240 INFO  [RMI TCP Connection(124)-127.0.0.1] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+@2020-Feb-20 13:33:08.318 INFO  [RMI TCP Connection(124)-127.0.0.1] c.n.d.DiscoveryClient - Shutting down DiscoveryClient ...
+@2020-Feb-20 13:33:11.322 INFO  [RMI TCP Connection(124)-127.0.0.1] c.n.d.DiscoveryClient - Unregistering ...
+@2020-Feb-20 13:33:11.341 INFO  [RMI TCP Connection(124)-127.0.0.1] c.n.d.DiscoveryClient - DiscoveryClient_TREPORT/treport:bf471646b740ee2ac0801d9a10f4b7c5 - deregister  status: 200
+@2020-Feb-20 13:33:11.439 INFO  [RMI TCP Connection(124)-127.0.0.1] c.n.d.DiscoveryClient - Completed shut down of DiscoveryClient
+@2020-Feb-20 13:33:11.441 INFO  [RMI TCP Connection(124)-127.0.0.1] c.z.h.HikariDataSource - HikariPool-1 - Shutdown initiated...
+@2020-Feb-20 13:33:11.493 INFO  [RMI TCP Connection(124)-127.0.0.1] c.z.h.HikariDataSource - HikariPool-1 - Shutdown completed.
+@2020-Feb-20 13:33:11.577 INFO  [RMI TCP Connection(124)-127.0.0.1] o.a.c.c.StandardService - Stopping service [Tomcat]
+@2020-Feb-20 13:33:11.597 INFO  [RMI TCP Connection(124)-127.0.0.1] o.a.c.c.C.[.[.[/] - Destroying Spring FrameworkServlet 'dispatcherServlet'
+@2020-Feb-20 13:34:23.765 INFO  [restartedMain] c.r.j.JasperApplication - No active profile set, falling back to default profiles: default
+@2020-Feb-20 13:34:24.293 INFO  [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+@2020-Feb-20 13:34:24.362 INFO  [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 63ms. Found 4 JPA repository interfaces.
+@2020-Feb-20 13:34:24.568 INFO  [restartedMain] o.s.c.c.s.GenericScope - BeanFactory id=7f1e4180-3561-33ef-8301-cd8cdb2d8157
+@2020-Feb-20 13:34:24.669 INFO  [restartedMain] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+@2020-Feb-20 13:34:24.692 INFO  [restartedMain] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration' of type [org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+@2020-Feb-20 13:34:24.695 INFO  [restartedMain] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'objectPostProcessor' of type [org.springframework.security.config.annotation.configuration.AutowireBeanFactoryObjectPostProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+@2020-Feb-20 13:34:24.698 INFO  [restartedMain] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@5a1bb5ab' of type [org.springframework.security.oauth2.provider.expression.OAuth2MethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+@2020-Feb-20 13:34:24.699 INFO  [restartedMain] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration' of type [org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+@2020-Feb-20 13:34:24.701 INFO  [restartedMain] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+@2020-Feb-20 13:34:24.711 INFO  [restartedMain] o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$c1b1bd9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+@2020-Feb-20 13:34:25.224 INFO  [restartedMain] o.s.b.w.e.t.TomcatWebServer - Tomcat initialized with port(s): 9085 (http)
+@2020-Feb-20 13:34:25.231 INFO  [restartedMain] o.a.c.c.StandardService - Starting service [Tomcat]
+@2020-Feb-20 13:34:25.232 INFO  [restartedMain] o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.30]
+@2020-Feb-20 13:34:25.383 INFO  [restartedMain] o.a.c.c.C.[.[.[/] - Initializing Spring embedded WebApplicationContext
+@2020-Feb-20 13:34:25.868 INFO  [restartedMain] c.z.h.HikariDataSource - HikariPool-1 - Starting...
+@2020-Feb-20 13:34:27.190 INFO  [restartedMain] c.z.h.HikariDataSource - HikariPool-1 - Start completed.
+@2020-Feb-20 13:34:28.864 INFO  [restartedMain] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+@2020-Feb-20 13:34:29.361 WARN  [restartedMain] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+@2020-Feb-20 13:34:29.464 INFO  [restartedMain] o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 75af9724-3b20-4692-bff2-8eacfca8731d
+
+@2020-Feb-20 13:34:29.800 INFO  [restartedMain] o.s.s.w.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@41e95431, org.springframework.security.web.context.SecurityContextPersistenceFilter@4eedd058, org.springframework.security.web.header.HeaderWriterFilter@55cd3410, org.springframework.security.web.authentication.logout.LogoutFilter@6c3ef289, org.springframework.security.oauth2.provider.authentication.OAuth2AuthenticationProcessingFilter@4cfa5ac, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@60ed2c90, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@75ef2b48, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@47fd7059, org.springframework.security.web.session.SessionManagementFilter@5ec07074, org.springframework.security.web.access.ExceptionTranslationFilter@1faa9e7b, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@25a353c2]
+@2020-Feb-20 13:34:29.818 WARN  [restartedMain] c.n.c.s.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+@2020-Feb-20 13:34:29.818 INFO  [restartedMain] c.n.c.s.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+@2020-Feb-20 13:34:29.821 WARN  [restartedMain] c.n.c.s.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+@2020-Feb-20 13:34:29.822 INFO  [restartedMain] c.n.c.s.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+@2020-Feb-20 13:34:29.996 INFO  [restartedMain] o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+@2020-Feb-20 13:34:30.557 INFO  [restartedMain] o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+@2020-Feb-20 13:34:30.987 INFO  [restartedMain] o.s.c.n.e.InstanceInfoFactory - Setting initial instance status as: STARTING
+@2020-Feb-20 13:34:31.060 INFO  [restartedMain] c.n.d.DiscoveryClient - Initializing Eureka in region us-east-1
+@2020-Feb-20 13:34:31.526 INFO  [restartedMain] c.n.d.p.DiscoveryJerseyProvider - Using JSON encoding codec LegacyJacksonJson
+@2020-Feb-20 13:34:31.527 INFO  [restartedMain] c.n.d.p.DiscoveryJerseyProvider - Using JSON decoding codec LegacyJacksonJson
+@2020-Feb-20 13:34:31.808 INFO  [restartedMain] c.n.d.p.DiscoveryJerseyProvider - Using XML encoding codec XStreamXml
+@2020-Feb-20 13:34:31.809 INFO  [restartedMain] c.n.d.p.DiscoveryJerseyProvider - Using XML decoding codec XStreamXml
+@2020-Feb-20 13:34:32.002 INFO  [restartedMain] c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+@2020-Feb-20 13:34:32.124 INFO  [restartedMain] c.n.d.DiscoveryClient - Disable delta property : false
+@2020-Feb-20 13:34:32.124 INFO  [restartedMain] c.n.d.DiscoveryClient - Single vip registry refresh property : null
+@2020-Feb-20 13:34:32.124 INFO  [restartedMain] c.n.d.DiscoveryClient - Force full registry fetch : false
+@2020-Feb-20 13:34:32.124 INFO  [restartedMain] c.n.d.DiscoveryClient - Application is null : false
+@2020-Feb-20 13:34:32.124 INFO  [restartedMain] c.n.d.DiscoveryClient - Registered Applications size is zero : true
+@2020-Feb-20 13:34:32.124 INFO  [restartedMain] c.n.d.DiscoveryClient - Application version is -1: true
+@2020-Feb-20 13:34:32.124 INFO  [restartedMain] c.n.d.DiscoveryClient - Getting all instance registry info from the eureka server
+@2020-Feb-20 13:34:32.315 INFO  [restartedMain] c.n.d.DiscoveryClient - The response status is 200
+@2020-Feb-20 13:34:32.318 INFO  [restartedMain] c.n.d.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+@2020-Feb-20 13:34:32.320 INFO  [restartedMain] c.n.d.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+@2020-Feb-20 13:34:32.324 INFO  [restartedMain] c.n.d.DiscoveryClient - Discovery Client initialized at timestamp 1582194872323 with initial instances count: 11
+@2020-Feb-20 13:34:32.327 INFO  [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry - Registering application TREPORT with eureka with status UP
+@2020-Feb-20 13:34:32.328 INFO  [restartedMain] c.n.d.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1582194872328, current=UP, previous=STARTING]
+@2020-Feb-20 13:34:32.330 INFO  [DiscoveryClient-InstanceInfoReplicator-0] c.n.d.DiscoveryClient - DiscoveryClient_TREPORT/treport:b2b5f1d2c2e2f92b36fbfb5163d4fc34: registering service...
+@2020-Feb-20 13:34:32.375 INFO  [DiscoveryClient-InstanceInfoReplicator-0] c.n.d.DiscoveryClient - DiscoveryClient_TREPORT/treport:b2b5f1d2c2e2f92b36fbfb5163d4fc34 - registration status: 204
+@2020-Feb-20 13:34:32.514 INFO  [restartedMain] o.s.b.w.e.t.TomcatWebServer - Tomcat started on port(s): 9085 (http) with context path ''
+@2020-Feb-20 13:34:32.516 INFO  [restartedMain] o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 9085
+@2020-Feb-20 13:34:32.637 INFO  [restartedMain] c.r.j.JasperApplication - Started JasperApplication in 9.798 seconds (JVM running for 10.633)
+@2020-Feb-20 13:34:54.166 INFO  [http-nio-9085-exec-1] o.a.c.c.C.[.[.[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+@2020-Feb-20 13:34:54.824 INFO  [http-nio-9085-exec-2] c.r.j.c.ReportController - request status list :** 138'APPROVED
+@2020-Feb-20 13:34:54.825 INFO  [http-nio-9085-exec-2] c.r.j.c.ReportController - request status list :** 138'null
+@2020-Feb-20 13:34:54.826 INFO  [http-nio-9085-exec-2] c.r.j.c.ReportController - request status list :** 107'APPROVED
+@2020-Feb-20 13:34:54.826 INFO  [http-nio-9085-exec-2] c.r.j.c.ReportController - request status list :** 101'APPROVED
+@2020-Feb-20 13:34:54.826 INFO  [http-nio-9085-exec-2] c.r.j.c.ReportController - request status list :** 133'APPROVED
+@2020-Feb-20 13:34:54.826 INFO  [http-nio-9085-exec-2] c.r.j.c.ReportController - request status list :** 133'APPROVED
+@2020-Feb-20 13:34:54.826 INFO  [http-nio-9085-exec-2] c.r.j.c.ReportController - report Formatpdf
+@2020-Feb-20 13:34:54.826 INFO  [http-nio-9085-exec-2] c.r.j.c.ReportController - report size[com.report.jasper.entities.CourseStatusReport@6b45b4be, com.report.jasper.entities.CourseStatusReport@56f742b3, com.report.jasper.entities.CourseStatusReport@6f961609, com.report.jasper.entities.CourseStatusReport@223703e9, com.report.jasper.entities.CourseStatusReport@77afeda, com.report.jasper.entities.CourseStatusReport@6b74d65c]
+@2020-Feb-20 13:35:25.215 INFO  [http-nio-9085-exec-4] c.r.j.c.ReportController - filename*********CourseStatusReport.pdf
+@2020-Feb-20 13:35:25.215 INFO  [http-nio-9085-exec-4] c.r.j.s.FileService - resource is CourseStatusReport.pdf
+@2020-Feb-20 13:39:13.494 INFO  [http-nio-9085-exec-7] c.r.j.c.ReportController - request status list :** 138'APPROVED
+@2020-Feb-20 13:39:13.495 INFO  [http-nio-9085-exec-7] c.r.j.c.ReportController - request status list :** 138'null
+@2020-Feb-20 13:39:13.495 INFO  [http-nio-9085-exec-7] c.r.j.c.ReportController - report Formatpdf
+@2020-Feb-20 13:39:13.495 INFO  [http-nio-9085-exec-7] c.r.j.c.ReportController - report size[com.report.jasper.entities.CourseStatusReport@32b4df27, com.report.jasper.entities.CourseStatusReport@a321fbf]
+@2020-Feb-20 13:39:15.659 INFO  [http-nio-9085-exec-8] c.r.j.c.ReportController - filename*********CourseStatusReport.pdf
+@2020-Feb-20 13:39:15.659 INFO  [http-nio-9085-exec-8] c.r.j.s.FileService - resource is CourseStatusReport.pdf
+@2020-Feb-20 13:39:32.116 INFO  [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.a.ConfigClusterResolver - Resolving eureka endpoints via configuration
+@2020-Feb-20 13:41:15.992 INFO  [RMI TCP Connection(19)-127.0.0.1] o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+@2020-Feb-20 13:41:15.993 INFO  [RMI TCP Connection(19)-127.0.0.1] o.s.c.n.e.s.EurekaServiceRegistry - Unregistering application TREPORT with eureka with status DOWN
+@2020-Feb-20 13:41:15.993 WARN  [RMI TCP Connection(19)-127.0.0.1] c.n.d.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1582195275993, current=DOWN, previous=UP]
+@2020-Feb-20 13:41:15.993 INFO  [DiscoveryClient-InstanceInfoReplicator-0] c.n.d.DiscoveryClient - DiscoveryClient_TREPORT/treport:b2b5f1d2c2e2f92b36fbfb5163d4fc34: registering service...
+@2020-Feb-20 13:41:15.998 INFO  [RMI TCP Connection(19)-127.0.0.1] o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+@2020-Feb-20 13:41:16.001 INFO  [RMI TCP Connection(19)-127.0.0.1] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+@2020-Feb-20 13:41:16.001 INFO  [DiscoveryClient-InstanceInfoReplicator-0] c.n.d.DiscoveryClient - DiscoveryClient_TREPORT/treport:b2b5f1d2c2e2f92b36fbfb5163d4fc34 - registration status: 204
+@2020-Feb-20 13:41:16.004 INFO  [RMI TCP Connection(19)-127.0.0.1] c.n.d.DiscoveryClient - Shutting down DiscoveryClient ...
+@2020-Feb-20 13:41:19.005 INFO  [RMI TCP Connection(19)-127.0.0.1] c.n.d.DiscoveryClient - Unregistering ...
+@2020-Feb-20 13:41:19.006 WARN  [DiscoveryClient-1] c.n.d.TimedSupervisorTask - task supervisor shutting down, can't accept the task
+@2020-Feb-20 13:41:19.018 INFO  [RMI TCP Connection(19)-127.0.0.1] c.n.d.DiscoveryClient - DiscoveryClient_TREPORT/treport:b2b5f1d2c2e2f92b36fbfb5163d4fc34 - deregister  status: 200
+@2020-Feb-20 13:41:19.045 INFO  [RMI TCP Connection(19)-127.0.0.1] c.n.d.DiscoveryClient - Completed shut down of DiscoveryClient
+@2020-Feb-20 13:41:19.045 INFO  [RMI TCP Connection(19)-127.0.0.1] c.z.h.HikariDataSource - HikariPool-1 - Shutdown initiated...
+@2020-Feb-20 13:41:19.113 INFO  [RMI TCP Connection(19)-127.0.0.1] c.z.h.HikariDataSource - HikariPool-1 - Shutdown completed.
+@2020-Feb-20 13:41:19.219 INFO  [RMI TCP Connection(19)-127.0.0.1] o.a.c.c.StandardService - Stopping service [Tomcat]
+@2020-Feb-20 13:41:19.219 INFO  [RMI TCP Connection(19)-127.0.0.1] o.a.c.c.C.[.[.[/] - Destroying Spring FrameworkServlet 'dispatcherServlet'

@@ -19,6 +19,8 @@ public class CourseStatusReport {
 //	private long id;
  
 	@Id
+	@Column(name="WORKFLOW_ID")
+	private String workflowId;
 	@Column(name="EMPLOYEE")
 	private String employee;
 	@Column(name="JOBNO")
@@ -46,6 +48,12 @@ public class CourseStatusReport {
 	
 	
 	 
+	public String getWorkflowId() {
+		return workflowId;
+	}
+	public void setWorkflowId(String workflowId) {
+		this.workflowId = workflowId;
+	}
 	public String getEmployee() {
 		return employee;
 	}

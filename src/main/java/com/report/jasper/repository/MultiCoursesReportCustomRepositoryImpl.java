@@ -1,16 +1,12 @@
 package com.report.jasper.repository;    
-import com.report.jasper.entities.MultiCoursesReport;
-
+import com.report.jasper.entities.MultiCoursesReport; 
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map; 
 import javax.persistence.EntityManager;
-import javax.persistence.PersistenceContext;
-//import javax.persistence.PersistenceContext;
-//
-//import org.springframework.data.jpa.repository.Query;
+import javax.persistence.PersistenceContext; 
 import org.springframework.stereotype.Repository; 
 
 @Repository 
@@ -31,7 +27,7 @@ public class MultiCoursesReportCustomRepositoryImpl  implements MultiCoursesRepo
 			    	
 			    	
 			    	  sqlQuery.append(" select * from TAC_MULTI_COURSES_DETAILS_VIEW  " );
-			    	    sqlQuery.append(  " where ( UPPER(COURSE_NAME) like UPPER('%'||:courseName||'%') or :courseName  is null) "  );
+			    	    sqlQuery.append(  " where ( UPPER(COURSE_NAME) like UPPER('%'||:courseName||'%') or trim(:courseName)  is null) "  );
 			    	    conditions.put("courseName", courseName); 
 			    	    if(startDate!=null && endDate!=null)
 			    	    { 
@@ -58,13 +54,13 @@ public class MultiCoursesReportCustomRepositoryImpl  implements MultiCoursesRepo
 			    		    	    	sqlQuery.append(  " AND ( END_DATE= :endDate  or :endDate is   null) " );
 			    		    	    	conditions.put("endDate", endDate);
 				    		    	    }
-						sqlQuery.append(  " AND ( UPPER(COORDINATOR) like UPPER('%'||:courseCoordinator||'%') or :courseCoordinator is   null) "   );
+						sqlQuery.append(  " AND ( UPPER(COORDINATOR) like UPPER('%'||:courseCoordinator||'%') or trim(:courseCoordinator) is   null) "   );
 						conditions.put("courseCoordinator", courseCoordinator);
-						sqlQuery.append(  " AND ( UPPER(LOCATION_NAME) like UPPER('%'||:locationName||'%') or :locationName is   null) "  );
+						sqlQuery.append(  " AND ( UPPER(LOCATION_NAME) like UPPER('%'||:locationName||'%') or trim(:locationName) is   null) "  );
 						conditions.put("locationName", locationName);
-						sqlQuery.append(  " AND ( UPPER(INSTRUCTOR) like UPPER('%'||:instructor||'%') or :instructor is   null) "   );
+						sqlQuery.append(  " AND ( UPPER(INSTRUCTOR) like UPPER('%'||:instructor||'%') or trim(:instructor) is   null) "   );
 						conditions.put("instructor", instructor);
-						sqlQuery.append(  " AND ( UPPER(ORGANIZATION) like UPPER('%'||:organisation||'%') or :organisation is  null) "  );
+						sqlQuery.append(  " AND ( UPPER(ORGANIZATION) like UPPER('%'||:organisation||'%') or trim(:organisation) is  null) "  );
 						conditions.put("organisation", organisation);
 			    	 
 						 
@@ -72,12 +68,9 @@ public class MultiCoursesReportCustomRepositoryImpl  implements MultiCoursesRepo
 			    	    javax.persistence.Query q = entityManager.createNativeQuery(sqlQuery.toString(),MultiCoursesReport.class);
 			    	    conditions.forEach((k,v) -> {
 							   q.setParameter(k,v);
-						   });
-		//	    	    List<CourseStatusReport>
-			    	    multiCoursesDetails = q.getResultList();
-			    	     System.out.println(multiCoursesDetails);
-			    	
-			    	 
+						   }); 
+			    	     multiCoursesDetails = q.getResultList();  
+			    	     
 	    	}catch (Exception e) {
 				e.printStackTrace();
 			}
